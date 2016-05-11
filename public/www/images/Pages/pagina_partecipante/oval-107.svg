@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="86" width="86" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 86">
+    <defs>
+        <filter height="200%" width="200%" y="-50%" x="-50%" id="filter-1">
+            <feOffset result="shadowOffset1" in="SourceAlpha" dy="4" dx="0" />
+            <feGaussianBlur result="shadowBlur1" in="shadowOffset1" stdDeviation="8" />
+            <feColorMatrix result="shadowMatrix1" in="shadowBlur1" type="matrix" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1   0 0 0 0.23 0" />
+            <feMerge>
+                <feMergeNode in="shadowMatrix1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    <path filter="url(#filter-1)" fill="#1f2421" fill-rule="evenodd" d="M 38 64 C 54.57 64 68 50.57 68 34 C 68 17.43 54.57 4 38 4 C 21.43 4 8 17.43 8 34 C 8 50.57 21.43 64 38 64 Z M 38 64" />
+</svg>

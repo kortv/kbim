@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="40" width="40" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#000000" fill="none" fill-rule="evenodd" d="M 39.17 4.81 C 39.17 2.61 37.39 0.83 35.19 0.83 L 4.81 0.83 C 2.61 0.83 0.83 2.61 0.83 4.81 L 0.83 35.19 C 0.83 37.39 2.61 39.17 4.81 39.17 L 35.19 39.17 C 37.39 39.17 39.17 37.39 39.17 35.19 L 39.17 4.81 L 39.17 4.81 Z M 39.17 4.81" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#c81d66" fill="none" fill-rule="evenodd" d="M 10.83 15.51 C 12.73 15.51 14.27 13.97 14.27 12.07 C 14.27 10.17 12.73 8.63 10.83 8.63 C 8.93 8.63 7.39 10.17 7.39 12.07 C 7.39 13.97 8.93 15.51 10.83 15.51 Z M 10.83 15.51" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#c81d66" fill="none" fill-rule="evenodd" d="M 20.15 30.1 C 22.05 30.1 23.6 28.56 23.6 26.66 C 23.6 24.76 22.05 23.22 20.15 23.22 C 18.25 23.22 16.71 24.76 16.71 26.66 C 16.71 28.56 18.25 30.1 20.15 30.1 Z M 20.15 30.1" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#000000" fill="none" fill-rule="evenodd" d="M 29.13 19.68 L 29.13 32.55" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#000000" fill="none" fill-rule="evenodd" d="M 29.13 7.38 L 29.13 12.8" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#c81d66" fill="none" fill-rule="evenodd" d="M 29.13 19.68 C 31.03 19.68 32.57 18.14 32.57 16.24 C 32.57 14.34 31.03 12.8 29.13 12.8 C 27.23 12.8 25.69 14.34 25.69 16.24 C 25.69 18.14 27.23 19.68 29.13 19.68 Z M 29.13 19.68" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#000000" fill="none" fill-rule="evenodd" d="M 10.83 15.51 L 10.83 32.55" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#000000" fill="none" fill-rule="evenodd" d="M 10.83 7.38 L 10.83 8.63" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#000000" fill="none" fill-rule="evenodd" d="M 20.15 30.1 L 20.15 32.55" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1.666666666666667" stroke="#000000" fill="none" fill-rule="evenodd" d="M 20.15 7.38 L 20.15 23.22" />
+</svg>

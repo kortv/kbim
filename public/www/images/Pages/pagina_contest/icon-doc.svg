@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="48" width="48" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 25.1 13.06 L 6.94 13.06" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 15.13 7.12 L 6.94 7.12" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 44.85 21.01 L 19.02 21.01 C 17.86 21.01 16.92 21.95 16.92 23.11 L 16.92 36.99 C 16.92 38.15 17.86 39.09 19.02 39.09 L 44.85 39.09 C 46.01 39.09 46.95 38.15 46.95 36.99 L 46.95 23.11 C 46.95 21.95 46.01 21.01 44.85 21.01 L 44.85 21.01 Z M 44.85 21.01" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 28.67 1.06 L 28.68 9 L 36.96 9" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 36.96 16.8 L 36.96 9 C 36.96 8.57 36.78 8.41 36.48 8.11 L 29.79 1.52 C 29.49 1.22 29.09 1.06 28.67 1.06 L 2.68 1.06 C 1.8 1.06 1.09 1.77 1.09 2.65 L 1.09 45.35 C 1.09 46.23 1.8 46.94 2.68 46.94 L 35.36 46.94 C 36.24 46.94 36.96 46.23 36.96 45.35 L 36.96 43.13" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 24.82 33 C 26.34 33 27.56 31.65 27.56 29.99 C 27.56 28.32 26.34 26.97 24.82 26.97 L 24.82 26.97 L 22.86 26.97 L 22.86 33.01 L 24.82 33.01 L 24.82 33 L 24.82 33 Z M 24.82 33" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 43.14 27.81 C 42.63 27.29 41.93 26.97 41.17 26.97 C 39.59 26.97 38.32 28.32 38.32 29.99 C 38.32 31.65 39.59 33 41.17 33 C 41.96 33 42.68 32.66 43.2 32.1" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 33.01 33.01 C 34.52 33.01 35.75 31.66 35.75 29.99 C 35.75 28.32 34.52 26.97 33.01 26.97 C 31.5 26.97 30.27 28.32 30.27 29.99 C 30.27 31.66 31.5 33.01 33.01 33.01 Z M 33.01 33.01" />
+</svg>

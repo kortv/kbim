@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="48" width="48" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 37.48 32.85 L 37.48 27.13 L 41.18 27.13" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 37.48 29.99 L 40.66 29.99" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 44.84 21.01 L 19.01 21.01 C 17.85 21.01 16.91 21.95 16.91 23.11 L 16.91 36.99 C 16.91 38.15 17.85 39.09 19.01 39.09 L 44.84 39.09 C 46 39.09 46.94 38.15 46.94 36.99 L 46.94 23.11 C 46.94 21.95 46 21.01 44.84 21.01 L 44.84 21.01 Z M 44.84 21.01" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 28.66 1.06 L 28.67 9 L 36.95 9" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 36.95 16.8 L 36.95 9 C 36.95 8.57 36.77 8.41 36.47 8.11 L 29.78 1.52 C 29.48 1.22 29.08 1.06 28.66 1.06 L 2.67 1.06 C 1.79 1.06 1.08 1.77 1.08 2.65 L 1.08 45.35 C 1.08 46.23 1.79 46.94 2.67 46.94 L 35.35 46.94 C 36.23 46.94 36.95 46.23 36.95 45.35 L 36.95 43.13" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 23.01 32.85 L 23.01 27.13 L 25.15 27.13 C 25.15 27.13 26.99 27.07 26.99 28.61 C 26.99 30.21 25.15 30.23 25.15 30.23 L 23.01 30.23" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="2" stroke="#000000" fill="none" fill-rule="evenodd" d="M 31.65 32.84 C 33.14 32.84 34.34 31.56 34.34 29.99 C 34.34 28.41 33.14 27.13 31.65 27.13 L 31.65 27.13 L 29.72 27.13 L 29.72 32.85 L 31.65 32.85 L 31.65 32.84 L 31.65 32.84 Z M 31.65 32.84" />
+</svg>

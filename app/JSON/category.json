@@ -1,0 +1,71 @@
+{
+    "module": "category",
+    "children": [
+        {
+            "id": "11",
+            "parent_id": "0",
+            "name": "INDUSTRIAL DESIGN",
+            "slug": "industrial-design",
+            "short_description": "<p>​</p>",
+            "icon_img": "/public/img/572c9c5f6ea6f100432584.png",
+            "image": "/public/img/572c9c6803ba8854044811.png",
+            "module": "category",
+            "children": []
+        },
+        {
+            "id": "12",
+            "parent_id": "0",
+            "name": "TRANSPORTATION DESIGN",
+            "slug": "transportation-design",
+            "short_description": "<p>​</p>",
+            "icon_img": "/public/img/572c9cbb96724340738456.png",
+            "image": "/public/img/572c9cc144179367654378.png",
+            "module": "category",
+            "children": []
+        },
+        {
+            "id": "13",
+            "parent_id": "0",
+            "name": "DESIGN DI INTERNI",
+            "slug": "design-di-interni",
+            "short_description": "",
+            "icon_img": "/public/img/57321977a2916026941808.png",
+            "image": "/public/img/5732197ff279f186962941.png",
+            "module": "category",
+            "children": []
+        },
+        {
+            "id": "14",
+            "parent_id": "0",
+            "name": "GIOIELLI DESIGN",
+            "slug": "gioielli-design",
+            "short_description": "",
+            "icon_img": "/public/img/573219ac014f3805828937.png",
+            "image": "/public/img/573219af9395e882481065.png",
+            "module": "category",
+            "children": []
+        },
+        {
+            "id": "15",
+            "parent_id": "0",
+            "name": "DESIGN DI ESTERNI",
+            "slug": "design-di-esterni",
+            "short_description": "",
+            "icon_img": "/public/img/573219d98c368436440127.png",
+            "image": "/public/img/573219ddf2223748504722.png",
+            "module": "category",
+            "children": []
+        },
+        {
+            "id": "16",
+            "parent_id": "0",
+            "name": "LIGHT DESIGN",
+            "slug": "light-design",
+            "short_description": "",
+            "icon_img": "/public/img/573219f5459c6206577454.png",
+            "image": "/public/img/573219fa33479403011840.png",
+            "module": "category",
+            "children": []
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+@media (min-width: 1800px) {
+
+    header{
+
+    }
+    header #logo{
+       /* width: 320px;*/
+    }
+    header #bs-example-navbar-collapse-1{
+        font-size: 16px;
+    }
+    header #bs-example-navbar-collapse-1 li a{
+        padding: 9px;
+        line-height: 22px;
+        font-weight: 700;
+    }
+    .big-header-text{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    #header-body>div{
+        padding-top: 69px;
+    }
+    #header-body>div:last-of-type{
+        padding-top: 0;
+    }
+    #registration-btn{
+        font-size: 16px;
+        line-height: 22px;
+        padding: 18px 60px;
+    }
+    #right-img{
+        width: 69px;
+    }
+    .run span{
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .run p{
+        width: 110px;
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 22px;
+        margin-top: 10px;
+    }
+    .reg-btn-row p{
+        margin-top: 15px;
+        font-size: 16px
+    }
+
+    #planctonic{
+        background-position: 220px 46px;
+    }
+    .big-header-text {
+        min-width: 680px;
+    }
+    #pl-wrap{
+        margin-top: 56px;
+    }
+    #planctonic{
+        top: -59px;
+    }
+    #planctonic .img-wrap {
+        margin-top: -30px;
+        width: 238px;
+    }
+    #content{
+        padding-bottom: 176px;
+    }
+    footer{
+        height: 176px;
+        margin-top: -176px;
+    }
+    footer .logo-footer{
+        display: inline-block;
+        width: 267px;
+        margin-top: 79px;
+    }
+    .footer-menu {
+        margin-top: 82px;
+    }
+    .footer-menu ul li a{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+    }
+    footer .social-icons{
+        margin-top: 60px;
+    }
+    .social-icons li {
+        width: 49px;
+    }
+
+    /*******************************************/
+    #first-category-wrap{
+        margin-top: 207px;
+    }
+    .wrap-category{
+        margin: 50px 0;
+    }
+    .wrap-category p{
+        left: 18px;
+        bottom: 18px;
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+    .wrap-category img{
+        bottom: 12px;
+        right: 13px;
+    }
+    #first-category-wrap .row div .btn{
+        margin-top: 128px;
+    }
+    #first-category-wrap .row>div>img{
+        margin: 120px 0 160px;
+    }
+    #two-content-wrap #left-img{
+        margin-top: 138px;
+        margin-bottom: 99px;
+    }
+    #block-designer{
+        padding-top: 134px;
+    }
+    #two-content-wrap #img-right{
+        margin-top: 88px;
+    }
+    #last-content-wrap{
+        margin-bottom: 80px;
+        margin-top: 150px;
+    }
+    #loginModal .modal-dialog{
+        margin-top: 234px;
+    }
+    #registrationModal .modal-dialog{
+        margin-top: 130px;
+        margin-right: 320px
+    }
+
+    /*******************************************/
+}

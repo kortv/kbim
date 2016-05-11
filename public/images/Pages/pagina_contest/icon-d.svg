@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="18" width="19" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18">
+    <path fill="#a5b3ba" fill-rule="evenodd" d="M 1.65 12.37 C 1.23 11.33 1 10.19 1 9 C 1 4.03 5.03 0 10 0 C 14.97 0 19 4.03 19 9 C 19 13.97 14.97 18 10 18 C 7.63 18 5.47 17.08 3.86 15.58 L 0.5 15.75 L 1.65 12.37 Z M 1.65 12.37" />
+    <text font-weight="700" font-size="12" font-family="Helvetica Neue" fill="#ffffff" y="14" x="6">
+        <tspan>D</tspan>
+    </text>
+</svg>
