@@ -29,7 +29,7 @@ export default class App extends Component {
     return (
       <div>
         <div id='content'>
-          <Header />
+          <Header category={this.state.category} />
           <CategoryList category={this.state.category} />
           <Block />
           <Company />

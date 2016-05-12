@@ -7,7 +7,7 @@ export default function Category({ category }) {
   };
   return (
     <div className='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
-      <a href='#'>
+      <a href={`/category/${category.slug}`}>
         <div className='wrap-category' style={bg}>
           <p>{category.name}</p>
           <img src={category.icon_img} />

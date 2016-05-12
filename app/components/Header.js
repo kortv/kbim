@@ -1,6 +1,11 @@
 import React from 'react';
+import CategoryMenu from './_CategoryList/CategoryMenu';
 
-export default function Header() {
+export default function Header({ category }) {
+  const list = category.length ? category.map((obj) => (
+    <CategoryMenu category={obj} key={obj.id} />)) :
+    <div />;
+  console.log(category.length);
   return (
 
     <header>
@@ -27,12 +32,7 @@ export default function Header() {
                     categorie<b className='caret' />
                   </a>
                   <ul className='dropdown-menu'>
-                    <li><a href='#'>industrial design</a></li>
-                    <li><a href='#'>transportation design</a></li>
-                    <li><a href='#'>design di interni</a></li>
-                    <li><a href='#'>gioielli design</a></li>
-                    <li><a href='#'>design di esterni</a></li>
-                    <li><a href='#'>light design</a></li>
+                    {list}
                   </ul>
                 </li>
                 <li><a href='#'>come funziona</a></li>
