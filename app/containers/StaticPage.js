@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './../SCSS/main.scss';
 import Header from './../components/Header';
-import CategoryList from './../components/CategoryList';
-import Block from './../components/Block';
-import Company from './../components/Company';
+import StaticContent from './../components/StaticContent';
 import Footer from './../components/Footer';
 import ModalLogin from './../components/ModalLogin';
 import ModalRegistration from './../components/ModalRegistration';
@@ -11,8 +9,7 @@ import ModalRegistration from './../components/ModalRegistration';
 import getStaticPageList from './../api/getStaticPageList';
 import getPageApi from './../events/getPageApi';
 
-
-export default class App extends Component {
+export default class StaticPage extends Component {
 
   constructor(props) {
     super(props);
@@ -22,13 +19,14 @@ export default class App extends Component {
       category: [],
       path: window.location.pathname.replace(/(\/public)|(index\.html)/g, ''),
       staticPageList: [],
+      staticCont: {},
     };
   }
 
   componentDidMount() {
     console.log(this.state.path);
     this.getPageApi(this.state.path);
-    this.getStaticPageList(this.state.path);
+    this.getStaticPageList();
   }
 
   render() {
@@ -36,9 +34,7 @@ export default class App extends Component {
       <div>
         <div id='content'>
           <Header category={this.state.category} />
-          <CategoryList category={this.state.category} />
-          <Block />
-          <Company />
+          <StaticContent staticCont={this.state.staticCont} />
         </div>
         <Footer staticPageList={this.state.staticPageList} />
         <ModalLogin />

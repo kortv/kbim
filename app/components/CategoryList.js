@@ -26,7 +26,7 @@ export default function CategoryList({ category }) {
           <a className='btn btn-default'>SCOPRI TUTTI I CONTEST</a>
         </div>
         <div className='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-          <img src='images/Pages/homepage/content/brush.png' />
+          <img src='/public/images/Pages/homepage/content/brush.png' />
         </div>
       </div>
     </div>

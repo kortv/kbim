@@ -14,7 +14,7 @@ export default function Header({ category }) {
           <div className='col-lg-5  col-md-5 col-sm-5 col-xs-12' id='logo-wrap'>
             <div id='logo'>
               <a href='#'>
-                <img src='images/Pages/homepage/header/logo_designando.png' />
+                <img src='/public/images/Pages/homepage/header/logo_designando.png' />
               </a>
             </div>
             <button
@@ -47,7 +47,7 @@ export default function Header({ category }) {
         <div className='row' id='header-body'>
           <div className='col-lg-2 col-md-2 col-sm-3 hidden-xs'>
             <div className='img-wrap' id='img-pen-box'>
-              <img src='images/Pages/homepage/header/pen-box.png' />
+              <img src='/public/images/Pages/homepage/header/pen-box.png' />
             </div>
           </div>
           <div className='col-lg-8 col-md-8 col-sm-7 col-xs-12'>
@@ -83,7 +83,7 @@ export default function Header({ category }) {
               <div className='col-lg-12 col-md-12 col-sm-12 col-xs-12' id='pl-wrap'>
                 <div id='planctonic'>
                   <div className='img-wrap'>
-                    <img src='images/Pages/homepage/header/planctonic.png' />
+                    <img src='/public/images/Pages/homepage/header/planctonic.png' />
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function Header({ category }) {
           </div>
           <div className='col-lg-2 col-md-2 col-sm-2 hidden-xs'>
             <div className='img-wrap ' id='right-img'>
-              <img src='images/Pages/homepage/header/pen.png' />
+              <img src='/public/images/Pages/homepage/header/pen.png' />
             </div>
           </div>
         </div>

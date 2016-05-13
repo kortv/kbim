@@ -5,7 +5,7 @@ var autoprefixer = require('autoprefixer');
 var precss       = require('precss');
 
 module.exports = {
-  devtool: 'eval-source-map',
+  devtool: 'source-map',
   entry: [
     './app/index.js'
   ],

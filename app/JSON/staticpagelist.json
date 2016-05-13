@@ -1,0 +1,25 @@
+{
+    "module": "staticPage",
+    "children": [
+        {
+            "Title": "COME FUNZIONA",
+            "Alias": "come_funziona"
+        },
+        {
+            "Title": "Contatti",
+            "Alias": "contatti"
+        },
+        {
+            "Title": "Privacy policy",
+            "Alias": "privacy_policy"
+        },
+        {
+            "Title": "Terms",
+            "Alias": "terms"
+        },
+        {
+            "Title": "Chi siamo",
+            "Alias": "chi_siamo"
+        }
+    ]
+}

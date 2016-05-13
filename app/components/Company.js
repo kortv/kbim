@@ -14,56 +14,56 @@ export default function Company() {
             <div className='col-lg-3 col-md-3 col-sm-4 col-xs-6'>
               <div className='img-wrap'>
                 <a href='#'>
-                  <img src='images/Pages/homepage/content/logo-boffi.png' />
+                  <img src='/public/images/Pages/homepage/content/logo-boffi.png' />
                 </a>
               </div>
             </div>
             <div className='col-lg-3 col-md-3 col-sm-4 col-xs-6'>
               <div className='img-wrap'>
                 <a href='#'>
-                  <img src='images/Pages/homepage/content/logo-boffi.png' />
+                  <img src='/public/images/Pages/homepage/content/logo-boffi.png' />
                 </a>
               </div>
             </div>
             <div className='col-lg-3 col-md-3 col-sm-4 col-xs-6'>
               <div className='img-wrap'>
                 <a href='#'>
-                  <img src='images/Pages/homepage/content/logo-boffi.png' />
+                  <img src='/public/images/Pages/homepage/content/logo-boffi.png' />
                 </a>
               </div>
             </div>
             <div className='col-lg-3 col-md-3 col-sm-4 col-xs-6'>
               <div className='img-wrap'>
                 <a href='#'>
-                  <img src='images/Pages/homepage/content/logo-boffi.png' />
+                  <img src='/public/images/Pages/homepage/content/logo-boffi.png' />
                 </a>
               </div>
             </div>
             <div className='col-lg-3 col-md-3 col-sm-4 col-xs-6'>
               <div className='img-wrap'>
                 <a href='#'>
-                  <img src='images/Pages/homepage/content/logo-boffi.png' />
+                  <img src='/public/images/Pages/homepage/content/logo-boffi.png' />
                 </a>
               </div>
             </div>
             <div className='col-lg-3 col-md-3 col-sm-4 col-xs-6'>
               <div className='img-wrap'>
                 <a href='#'>
-                  <img src='images/Pages/homepage/content/logo-boffi.png' />
+                  <img src='/public/images/Pages/homepage/content/logo-boffi.png' />
                 </a>
               </div>
             </div>
             <div className='col-lg-3 col-md-3 col-sm-4 col-xs-6'>
               <div className='img-wrap'>
                 <a href='#'>
-                  <img src='images/Pages/homepage/content/logo-boffi.png' />
+                  <img src='/public/images/Pages/homepage/content/logo-boffi.png' />
                 </a>
               </div>
             </div>
             <div className='col-lg-3 col-md-3 col-sm-4 col-xs-6'>
               <div className='img-wrap'>
                 <a href='#'>
-                  <img src='images/Pages/homepage/content/logo-boffi.png' />
+                  <img src='/public/images/Pages/homepage/content/logo-boffi.png' />
                 </a>
               </div>
             </div>
