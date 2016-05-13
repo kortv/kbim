@@ -13,7 +13,7 @@
 <body>
 <div id="wrap">
     <header>
-        <div class="container-fluid">
+        <div class="container header-container">
             <div class="row">
                 <div class="col-lg-5  col-md-5 col-sm-5 col-xs-12" id="logo-wrap">
                     <div id="logo">
@@ -25,7 +25,7 @@
                         <i class="glyphicon glyphicon-menu-hamburger"></i>
                     </button>
                 </div>
-                <div class="col-lg-5  col-md-6  col-sm-7 col-xs-12">
+                <div class="col-lg-7  col-md-7  col-sm-7 col-xs-12">
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
@@ -77,14 +77,14 @@
     <div id="content">
         <div class="container">
             <div class="row header-of-filter">
-                <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+                <div class="col-lg-6 col-md-6 col-ms-6 col-xs-8">
                     <h3>Display <span class="number">43</span> <span>contest</span></h3>
                 </div>
-                <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+                <div class="col-lg-6 col-md-6 col-ms-6 col-xs-4">
                     <a href="#filter-panel" data-toggle="collapse" class="btn-control-filter">filtri</a>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="panel panel-default filter-panel collapse" id="filter-panel">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse" id="filter-panel">
+                    <div class="panel panel-default filter-panel " >
                         <div class="panel-body">
                             <p>FILTRA per</p>
                             <ul class="find-list-contest">
@@ -128,7 +128,7 @@
                             </ul>
                             <div class="line-filter"></div>
                             <div class="pull-right">
-                                <a href="#" class="btn btn-default">scadenzae</a>
+                                <a href="#" class="btn btn-default active-filter">scadenzae</a>
                                 <a href="#" class="btn btn-default">partecipanti</a>
                                 <a href="#" class="btn btn-default">azienda</a>
                             </div>
@@ -136,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row" id="result-header">
+            <div class="row hidden-xs result-header">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-8 col-sm-offset-8 col-xs-offset-8">
                     <div class="row">
                         <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
@@ -152,30 +152,187 @@
                 </div>
             </div>
             <div class="row filter-result">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3">
                         <div class="logo-categiry icon-transport"></div>
                     </div>
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 body-filtration">
-                        <p class="title-contest">TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</p>
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9 body-filtration">
+                        <a href="#" class="title-contest">TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
                         <a href="#">Transportation design</a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12">
                                 <div class="row">
-                                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                                        <p></p>
+                                    <div class="col-xs-3 col-xs-offset-3 col-sm-offset-0 col-lg-4 col-md-4 col-sm-4 ">
+                                        <a href="#">
+                                            <div class="logo-company">
+                                                <img src="images/Pages/pagina_azienda_pubblic/content/logo-boffi.png">
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                                        <p></p>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3 border-div">
+                                        <div class="date-wrap cell-wrap">
+                                            <p>12 MAR</p>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                                        <p></p>
+                                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3">
+                                        <div class="participants-wrap cell-wrap">
+                                            <p>34</p>
+                                        </div>
                                     </div>
                                 </div>
-
-
+                    </div>
+            </div>
+            <div class="row filter-result">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3">
+                    <div class="logo-categiry icon-industrial"></div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9 body-filtration">
+                    <a href="#" class="title-contest">TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
+                    <a href="#">Transportation design</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-3 col-xs-offset-3 col-sm-offset-0 col-lg-4 col-md-4 col-sm-4 ">
+                            <a href="#">
+                                <div class="logo-company">
+                                    <img src="images/Pages/pagina_azienda_pubblic/content/logo-boffi.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3 border-div">
+                            <div class="date-wrap cell-wrap">
+                                <p>12 MAR</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3">
+                            <div class="participants-wrap cell-wrap">
+                                <p>34</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="row filter-result">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3">
+                    <div class="logo-categiry icon-interni"></div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9 body-filtration">
+                    <a href="#" class="title-contest">TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
+                    <a href="#">Transportation design</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-3 col-xs-offset-3 col-sm-offset-0 col-lg-4 col-md-4 col-sm-4 ">
+                            <a href="#">
+                                <div class="logo-company">
+                                    <img src="images/Pages/pagina_azienda_pubblic/content/logo-boffi.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3 border-div">
+                            <div class="date-wrap cell-wrap">
+                                <p>12 MAR</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3">
+                            <div class="participants-wrap cell-wrap">
+                                <p>34</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row filter-result">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3">
+                    <div class="logo-categiry icon-jewellery"></div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9 body-filtration">
+                    <a href="#" class="title-contest">TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
+                    <a href="#">Transportation design</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-3 col-xs-offset-3 col-sm-offset-0 col-lg-4 col-md-4 col-sm-4 ">
+                            <a href="#">
+                                <div class="logo-company">
+                                    <img src="images/Pages/pagina_azienda_pubblic/content/logo-boffi.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3 border-div">
+                            <div class="date-wrap cell-wrap">
+                                <p>12 MAR</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3">
+                            <div class="participants-wrap cell-wrap">
+                                <p>34</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row filter-result">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3">
+                    <div class="logo-categiry icon-esterni"></div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9 body-filtration">
+                    <a href="#" class="title-contest">TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
+                    <a href="#">Transportation design</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-3 col-xs-offset-3 col-sm-offset-0 col-lg-4 col-md-4 col-sm-4 ">
+                            <a href="#">
+                                <div class="logo-company">
+                                    <img src="images/Pages/pagina_azienda_pubblic/content/logo-boffi.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3 border-div">
+                            <div class="date-wrap cell-wrap">
+                                <p>12 MAR</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3">
+                            <div class="participants-wrap cell-wrap">
+                                <p>34</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row filter-result">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-3">
+                    <div class="logo-categiry icon-light"></div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9 body-filtration">
+                    <a href="#" class="title-contest">TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
+                    <a href="#">Transportation design</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-3 col-xs-offset-3 col-sm-offset-0 col-lg-4 col-md-4 col-sm-4 ">
+                            <a href="#">
+                                <div class="logo-company">
+                                    <img src="images/Pages/pagina_azienda_pubblic/content/logo-boffi.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3 border-div">
+                            <div class="date-wrap cell-wrap">
+                                <p>12 MAR</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-3">
+                            <div class="participants-wrap cell-wrap">
+                                <p>34</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row btn-row">
+                <a href="#" class="btn go-to-company">sei una azienda?</a>
             </div>
         </div>
     </div>
@@ -241,5 +398,13 @@
 </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
 <script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $('#filter-panel').on('hide.bs.collapse', function () {
+        $('.btn-control-filter').removeClass('open-control-filter');
+    });
+    $('#filter-panel').on('show.bs.collapse', function () {
+        $('.btn-control-filter').addClass('open-control-filter');
+    });
+</script>
 </body>
 </html>

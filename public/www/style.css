@@ -16,11 +16,12 @@ header{
     background-color: #1f2421;
     text-align: center;
 }
+
 header #logo{
-    display: inline-block;
     width: 320px;
     margin-top: 13px;
 }
+
 footer .logo-footer{
     display: inline-block;
     width: 178px;
@@ -62,6 +63,7 @@ header .navbar-nav>li>a:hover, header .navbar-nav>li>a:focus, .nav .open > a:foc
 }
 #img-pen-box{
     max-width: 250px;
+    float: right;
 }
 .big-header-text{
     color: white;
@@ -262,6 +264,7 @@ footer .social-icons{
 #esterni{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63) 0%, transparent 100%),
     url("images/Pages/homepage/content/categories/image-esterni.png");
+
 }
 #light{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63) 0%, transparent 100%),
@@ -556,7 +559,7 @@ footer .social-icons{
 .regSuccessModal .modal-dialog .checkbox:checked + label span:last-of-type{
     color: white;
 }
-.regSuccessModal .modal-dialog .category-icon{
+.circle-icon{
     width: 60px;
     height: 60px;
     background-color: #1f2421;
@@ -564,12 +567,15 @@ footer .social-icons{
     border-radius: 50%;
     padding: 15px;
     display: inline-block;
-    margin-top: 23px;
-    margin-bottom: 15px;
 }
-.regSuccessModal .modal-dialog .category-icon img{
+.circle-icon img{
     width: 30px;
     height: 30px;
+}
+.regSuccessModal .modal-dialog .category-icon{
+
+    margin-top: 23px;
+    margin-bottom: 15px;
 }
 .regSuccessModal .modal-dialog .modal-body label span:last-of-type{
     color: #ce5374;
@@ -639,6 +645,7 @@ footer .social-icons{
     font-size: 16px;
     padding: 0 30px;
     background-color: #f4f4f4;
+    color: #212320;
 
 }
 .form-search input#search::-webkit-input-placeholder {
@@ -683,12 +690,14 @@ form.form-search{
  }
  .header-of-filter h3{
      font-size: 30px;
+     line-height: 41px;
      font-weight: normal;
+     margin: 0;
  }
 .header-of-filter h3 span{
     font-weight: 700;
 }
-.header-of-filter h3 span:first-of-type{
+span.number{
     color: #c81c66;
 }
 .btn-control-filter{
@@ -700,6 +709,10 @@ form.form-search{
     line-height: 40px;
     color: #303531;
     background: url("images/Pages/pagina_lista_contest/icon-open.png") no-repeat right 0;
+
+}
+a.open-control-filter{
+    background: url("images/Pages/pagina_lista_contest/icon-close.png") no-repeat right 0;
 }
 .btn-control-filter:hover, .btn-control-filter:visited{
     color: #303531;
@@ -710,7 +723,7 @@ form.form-search{
     background: #c81c66;
     color: white;
     height: 90px;
-    margin: 30px 0 20px;
+    margin: 28px 0 0;
 
 }
 .filter-panel .panel-body{
@@ -753,6 +766,13 @@ form.form-search{
     background-color: #cf5375;
     border: none;
     margin: 5px 0 0 15px;
+    color: #e9eced;;
+}
+.filter-panel a.active-filter{
+    background-color: #9c0d38;
+}
+.result-header{
+    margin-top: 57px;
 }
 .line-filter{
     width: 1px;
@@ -762,12 +782,26 @@ form.form-search{
     margin-top: -5px;
     margin-left: 10px;
 }
-#result-header p{
+.result-header p{
     font-size: 12px;
     font-weight: 700;
     text-align: center;
+    line-height: 17px;
+    text-transform: uppercase;
 }
-.filter-result .logo-categiry{
+.filter-result{
+    height: 107px;
+    border: 1px #e6e6e6 solid;
+    padding: 20px 10px;
+    background: white;
+    margin-bottom: 2px;
+}
+.filter-result:hover{
+    background-color: #f4f4f4;
+    border-left: 10px #c81c66 solid;
+    padding: 20px 10px 20px 1px;
+}
+.logo-categiry{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -775,21 +809,339 @@ form.form-search{
     background-size: 30px 30px;
     background-repeat: no-repeat;
     background-position: 10px ;
+    margin: 8px auto 0;
 }
-.filter-result .icon-transport{
+.filter-result>div{
+    padding: 0 1px;
+}
+.icon-transport{
     background-image: url("images/Pages/homepage/content/categories/icon-transport.png");
 }
-.title-contest{
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 8px;
+.icon-industrial{
+    background-image: url("images/Pages/homepage/content/categories/icon-industrial.png");
 }
-.body-filtration a{
+.icon-interni{
+    background-image: url("images/Pages/homepage/content/categories/icon-interni.png");
+}
+.icon-jewellery{
+    background-image: url("images/Pages/homepage/content/categories/icon-jewellery.png");
+}
+.icon-esterni{
+    background-image: url("images/Pages/homepage/content/categories/icon-esterni.png");
+}
+.icon-light{
+    background-image: url("images/Pages/homepage/content/categories/icon-light.png");
+}
+.title-contest{
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #1f2420;
+    text-transform: uppercase;
+
+}
+.title-contest:hover, .title-contest:visited{
+    color: #1f2420;
+    text-decoration: none;
+}
+.body-filtration{
+    margin-top: 14px;
+}
+.body-filtration a:not(.title-contest){
     font-size: 12px;
+    line-height: 12px;
     color: #9b9b9b;
     text-decoration: underline;
 }
+.logo-company{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+.cell-wrap{
+    width: 80px;
+    height: 65px;
+    background-position: 22px 0;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 16px;
+    margin: 0 auto;
+}
+.cell-wrap p{
+    margin: 0;
+
+
+
+}
+.date-wrap{
+    background-image: url("images/Pages/pagina_azienda_pubblic/content/icon-thin.png");
+}
+.participants-wrap{
+    background-image: url("images/Pages/pagina_azienda_pubblic/content/icon-men.png");
+}
+.participants-wrap p{
+    color: #c81d66;
+    font-size: 16px;
+    font-weight: 700;
+}
+.border-div{
+    border-width: 0 1px 0;
+    border-color: #1f2420;
+    border-style: solid;
+}
+.go-to-company{
+    margin: 124px 0 113px;
+    background-color: #c81d66;
+    border-radius: 5px;
+    padding: 15px 40px 13px;
+    color: #f4f4f4;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    border: none;
+    text-transform: uppercase;
+}
+.btn-row{
+    text-align: center;
+}
+a.go-to-company:hover{
+    border: none;
+    background: #c81d66;
+    color: #f4f4f4;
+}
+a.go-to-company:visited{
+    color: #f4f4f4;
+}
+/**************************************************/
+.public-company-header{
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.53) 100%),
+            url("images/Pages/pagina_azienda_pubblic/header/background-header1.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: #f4f4f4;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 20px;
+    border-radius: 5px 5px 0 0;
+}
+.public-company-header .logo-social-wrap{
+    text-align: right;
+}
+.big-company-logo{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 60px 9px;
+    margin: 71px 0 12px;
+    float: right;
+}
+.public-company-header .company-socials{
+    margin: 0 44px 43px;
+    display: inline-block;
+
+}
+.public-company-header .company-socials li img{
+    width: 100%;
+    height: 100%;
+}
+.public-company-header .company-socials li{
+    margin: 0 3px;
+}
+.public-company-header p{
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.public-company-header h1{
+    color: #e6e6e6;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-top: 87px;
+}
+.public-company-header a{
+    font-weight: 700;
+    color: #f4f4f4;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+.company-site{
+    background: url("images/Pages/pagina_azienda_pubblic/header/icon-site.png") 0 5px no-repeat;
+    padding-left: 32px;
+}
+.category-list{
+    float: right;
+}
+.category-list li{
+    margin: 0 5px;
+}
+.category-list li a .circle-icon img{
+    width: 30px;
+    height: 30px;
+}
+.filter-wrap{
+    margin: 47px 0 60px;
+}
+.contest-now-info p a{
+    text-decoration: none;
+    color: #1f2421;
+}
+.contest-now-info p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 40px;
+    color: #1f2421;
+    text-align: right;
+}
+.contest-now-info p a:last-of-type{
+    color: rgba(41, 45, 57, 0.5);
+}
+/*************************************************************/
+.participants-info{
+    text-align: left;
+    margin: 70px 0 76px;
+}
+.participant-img{
+    width: 150px;
+    height: 150px;
+    float: right;
+}
+.participant-name{
+    color: #e6e6e6;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    margin-top: 13px;
+    text-transform: uppercase;
+}
+.participant-text{
+    color: #f4f4f4;
+    font-size: 16px;
+    font-weight: 400;
+}
+.specializations-row{
+    margin-top: 34px;
+}
+.specializations-row .category-list{
+    float: none;
+}
+.specializations-row p{
+    float: left;
+    color: #c81d66;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 18px 0;
+    margin-right: 16px;
+}
+.my-designs{
+    padding: 0 37px;
+    margin-bottom: 50px;
+}
+.my-designs h3{
+    color: #c81d66;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    text-transform: uppercase;
+    margin-left: -15px;
+}
+.header-item-design{
+    padding-bottom: 30px;
+}
+.item-design{
+    border: 1px solid #e6e6e6;
+    padding: 28px 17px 2px;
+    margin-bottom: 23px;
+}
+.rating-num{
+    color: #c81d66;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 60px;
+    text-align: center;
+}
+.rating-num p{
+    margin: 0;
+}
+.view-proposal{
+    background-color: #c81d66;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 14px 17px;
+    margin: 4px 0;
+
+}
+.small-col{
+    text-align: center;
+}
+.stars-wrap{
+    color: #c81d66;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.property-name{
+    color: #1f2421;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 27px;
+    float: left;
+    text-transform: uppercase;
+    margin: 0;
+}
+.property-list{
+
+    border-top: 1px solid #e9eced;
+    padding: 18px 0 0;
+}
+.property-item{
+    margin-bottom: 40px;
+}
+.stars-wrap{
+    text-align: right;
+}
 /*************************************************/
+@media (min-width: 1300px) {
+    .header-container{
+        width: 1270px;
+    }
+}
+@media (max-width: 1200px) {
+    .filter-panel .panel-body {
+        padding: 15px 10px 10px;
+    }
+    .filter-panel .checkbox + label {
+        width: 50px;
+        height: 50px;
+    }
+    .filter-panel .find-list-contest li {
+        margin: 5px;
+    }
+    .filter-panel .find-list-contest li img {
+        height: 25px;
+        margin: 8px 0 0;
+    }
+    .filter-panel a.btn {
+        width: 135px;
+        margin: 5px 0 0 5px;
+    }
+
+}
 @media (max-width:1124px) {
     header #bs-example-navbar-collapse-1 li a {
         font-size: 14px;
@@ -809,7 +1161,7 @@ form.form-search{
     }
 
     .big-header-text {
-        min-width: 560px;
+        max-width: 560px;
     }
     .header-body>.col-md-8{
         position: static;
@@ -817,7 +1169,15 @@ form.form-search{
 
 
 }
+@media (max-width: 1100px) {
+    .footer-menu ul li {
+        margin: 0 7px;
+    }
+}
 @media (max-width: 992px) {
+    header #logo {
+        width: 213px;
+    }
     .big-header-text {
         font-size: 40px;
         line-height: 45px;
@@ -896,14 +1256,50 @@ form.form-search{
     .find-list-contest li {
         margin: 40px 26px 40px 0;
     }
-    
+    .category-list li{
+        margin: 0 5px 17px;
+    }
+    .filter-result  div .row>div{
+        padding: 0;
+    }
+    .body-filtration {
+        padding-left: 30px;
+    }
+    .go-to-company {
+        margin: 83px 0 75px;
+    }
+    .result-header div .row>div{
+        padding: 0;
+    }
+    .find-list-contest {
+        display: inline-block;
+    }
+   .filter-panel .find-list-contest {
+        float: right;
+    }
+    .filter-panel{
+        height: 150px;
+    }
+    .filter-panel .pull-right{
+
+    }
+    .filter-panel a.btn {
+        width: 148px;
+        margin: 5px 0 0 20px;
+    }
+    .filter-panel .line-filter{
+        display: none;
+    }
+    .header-item-design div .row>div{
+        padding: 0;
+    }
 }
 @media (max-width: 767px){
     header{
         height: auto;
     }
-    header #logo {
-        width: 213px;
+    header #logo{
+        display: inline-block;
     }
     .modal-dialog {
         margin: 0 auto;
@@ -993,7 +1389,7 @@ form.form-search{
     .search-header{
         text-align: center;
     }
-    .find-list-contest {
+    .filter-panel .find-list-contest {
         display: inline-block;
     }
     form.form-search {
@@ -1015,12 +1411,93 @@ form.form-search{
     .search-header .form-search input#search {
         height: 47px;
     }
+    .header-of-filter {
+        margin-bottom: 20px;
+    }
+    .filter-result {
+        height: auto;
+        margin: 0 0 2px;
+    }
+    .filter-result div .row{
+        margin-top: 15px;
+    }
+    .big-company-logo{
+        float: none;
+        margin: 47px auto 12px;
+    }
+    .public-company-header, .public-company-header .logo-social-wrap{
+        text-align: center;
+    }
+    .public-company-header .company-socials {
+        margin: 0;
+    }
+    .public-company-header h1 {
+        margin-top: 58px;
+    }
+    .category-list {
+        float: none;
+    }
+    .category-list li {
+        margin: 10px 5px 17px;
+    }
+    .participant-img {
+        float: none;
+        margin: 0 auto;
+    }
+    .participants-info {
+        text-align: center;
+        margin: 47px 0;
+    }
+    .stars-wrap {
+        font-size: 18px;
+    }
+    .item-design{
+        padding: 18px 0 2px;
+        margin: 0 0 23px
+    }
+    .my-designs {
+        padding: 0;
+    }
+    .my-designs h3 {
+    margin-left: 0;
+    }
+
+
 }
 @media (max-width: 767px){
     .regSuccessModal .modal-dialog {
         width: 466px;
     }
 }
+@media (max-width: 600px){
+    .filter-panel a.btn {
+        width: 148px;
+        margin: 5px 0 0 5px;
+    }
+}
+@media (max-width: 520px){
+    .filter-panel {
+        height: auto;
+    }
+    .find-list-contest {
+        float: none;
+    }
+    .filter-panel .pull-right{
+        text-align: center;
+    }
+    .filter-panel a.btn {
+        width: 135px;
+    }
+    .property-name {
+        float: none;
+    }
+    .stars-wrap {
+        text-align: left;
+
+    }
+
+}
+
 @media (max-width: 460px){
     .regSuccessModal .modal-dialog {
         width: 100%;
