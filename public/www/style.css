@@ -51,12 +51,15 @@ header #bs-example-navbar-collapse-1 li .dropdown-menu li a {
     color: #1f2421;;
 }
 header .navbar-nav>li{
-    margin: 7px 5px 0;
+    margin: 10px 5px 0;
 }
-header .navbar-nav>li>a:hover, header .navbar-nav>li>a:focus, .nav .open > a:focus {
+header .navbar-nav>li>a:hover,  header .nav .open > a:focus, header .nav .open > a:hover, header .nav .open > a {
     background-color: #c81d66;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.17);
+}
+header .navbar-nav>li>a:focus{
+    background: transparent;
 }
 .img-wrap img{
     width: 100%;
@@ -944,6 +947,7 @@ a.go-to-company:visited{
     padding: 60px 9px;
     margin: 71px 0 12px;
     float: right;
+    position: relative;
 }
 .public-company-header .company-socials{
     margin: 0 44px 43px;
@@ -1014,6 +1018,8 @@ a.go-to-company:visited{
     width: 150px;
     height: 150px;
     float: right;
+    position: relative;
+
 }
 .participant-name{
     color: #e6e6e6;
@@ -1115,6 +1121,185 @@ a.go-to-company:visited{
 .stars-wrap{
     text-align: right;
 }
+/**************************************************/
+.navbar-nav i{
+    font-size: 10px;
+    line-height: 10px;
+    float: right;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.dropdown-menu{
+    border-radius: 5px;
+    padding: 17px 15px 17px 13px;
+}
+.item-for-registered-user{
+    border-left: 2px #c81d66 solid;
+
+}
+header #bs-example-navbar-collapse-1 .item-for-registered-user a.dropdown-toggle{
+    padding: 0;
+    text-transform: none;
+}
+
+.item-for-registered-user:hover a.dropdown-toggle{
+    background: none;
+}
+.item-for-registered-user a.dropdown-toggle i{
+    margin-top: 0;
+    float: none;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 5px;
+}
+.item-for-registered-user img{
+    width: 40px;
+    height: 40px;
+    margin: 0 11px 0 16px;
+}
+
+
+header #bs-example-navbar-collapse-1 .item-for-registered-user .dropdown-menu li:last-of-type a{
+    color: #ce5374;
+    letter-spacing: 0.8px;
+    text-transform: none;
+
+}
+
+header #bs-example-navbar-collapse-1 .dropdown-menu{
+    background: url("images/Pages/homepage/footer/combined-shape.png") no-repeat;
+    background-size: 100% 100%;
+    margin-right: -5px;
+    border: none;
+    /*width: 180px;
+    height: 171px;*/
+    box-shadow: none;
+}
+.edit-photos{
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 36px;
+    height: 36px;
+    background-color: #c81d66;
+    border: 3px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+.edit-profile-header{
+    margin-top: 26px;
+}
+.edit-profile-item{
+    width: 25%;
+    text-align: center;
+}
+.nav-tabs > li.edit-profile-item>a{
+    opacity: 0.5;
+    color: #c81d66;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-bottom: 7px;
+}
+.nav-tabs > li.edit-profile-item.active>a{
+    border: none;
+    opacity: 1;
+    border-bottom: 5px #c81d66 solid;
+    color: #c81d66;
+}
+.nav .item-for-registered-user.open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+}
+header #bs-example-navbar-collapse-1 .item-for-registered-user:hover>a,  header .item-for-registered-user>li>a:focus, .nav .item-for-registered-user.open > a:focus{
+    background: none;
+}
+.edit-profile-list{
+
+}
+.edit-profile-form-group{
+    padding: 0 97px;
+    margin-bottom: 17px;
+
+}
+.edit-profile-content-body{
+    margin: 47px 0;
+}
+.edit-profile-form-group>div{
+    padding: 0;
+}
+.edit-profile-label{
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    background-color: #c81d66;
+    border-radius: 1px;
+    text-align: left;
+    padding: 0 5px 0 24px;
+    }
+.edit-profile-label img{
+    margin-right: 24px;
+}
+.edit-profile-input{
+    width: 100%;
+    height: 60px;
+    background-color: #e8ebed;
+    border: none;
+    border-radius: 1px;
+    padding: 19px 26px;
+    color: #1f2421;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.edit-profile-btn{
+    width: 103px;
+    height: 40px;
+    background-color: #ce5374;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 10px 10px 10px 16px;
+}
+textarea.edit-profile-input{
+    height: 247px;
+}
+.edit-profile-content-body p{
+    text-align: left;
+    margin-left: 82px;
+}
+.active-btn{
+    background-color: #9c0d38;
+}
+/*************************************************/
+.big-company-logo .edit-photos {
+    top:4px;
+    left: 21px;
+}
+.edit-company-background{
+    bottom: 19px;
+    left: 14px;
+    top: inherit;
+
+}
+.not-active{
+    opacity: 0.3;
+}
+.company-notification .edit-profile-label{
+    text-transform: none;
+}
+.edit-profile-form-group input[disabled]{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 /*************************************************/
 @media (min-width: 1300px) {
     .header-container{
@@ -1140,12 +1325,19 @@ a.go-to-company:visited{
         width: 135px;
         margin: 5px 0 0 5px;
     }
+    .edit-profile-label img{
+        margin-right: 10px;
+    }
 
 }
 @media (max-width:1124px) {
     header #bs-example-navbar-collapse-1 li a {
         font-size: 14px;
         line-height: 18px;
+    }
+    .item-for-registered-user img {
+        width: 35px;
+        height: 35px;
     }
 }
 @media (max-width: 1024px) {
@@ -1292,6 +1484,24 @@ a.go-to-company:visited{
     }
     .header-item-design div .row>div{
         padding: 0;
+    }
+    .item-for-registered-user img {
+        margin: 0 5px 0 5px;
+    }
+    .edit-profile-label {
+        padding: 0 5px;
+    }
+    .edit-profile-form-group {
+        padding: 0;
+    }
+    .edit-profile-content-body p{
+        margin-left: -15px;
+    }
+    header .menu-company-profile  .navbar-nav>li {
+        margin: 10px 2px 0;
+    }
+    header .menu-company-profile>ul li i{
+        margin-left: 0;
     }
 }
 @media (max-width: 767px){
@@ -1461,7 +1671,32 @@ a.go-to-company:visited{
     .my-designs h3 {
     margin-left: 0;
     }
-
+    .navbar-nav i {
+        float: none;
+    }
+    header #bs-example-navbar-collapse-1  .dropdown-menu{
+    background: none;
+        width: auto;
+        height: auto;
+         }
+    .edit-profile-form-group>div {
+        padding: 0 15px;
+    }
+    .edit-profile-item {
+        width: 100%;
+    }
+    .edit-profile-label img {
+        margin-right: 24px;
+    }
+    .edit-profile-label {
+        padding: 0 24px;
+    }
+    .edit-profile-content-body p{
+        margin-left: 0;
+    }
+    header .menu-company-profile>ul li i{
+        margin-left: 5px;
+    }
 
 }
 @media (max-width: 767px){

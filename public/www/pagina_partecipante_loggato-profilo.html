@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina partecipante loggato-profilo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="big-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div class="container header-container">
+            <div class="row">
+                <div class="col-lg-5  col-md-5 col-sm-5 col-xs-12" id="logo-wrap">
+                    <div id="logo">
+                        <a href="#">
+                            <img src="images/Pages/homepage/header/logo_designando.png">
+                        </a>
+                    </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <i class="glyphicon glyphicon-menu-hamburger"></i>
+                    </button>
+                </div>
+                <div class="col-lg-7  col-md-7  col-sm-7 col-xs-12">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">categorie<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">industrial design</a></li>
+                                    <li><a href="#">transportation design</a></li>
+                                    <li><a href="#">design di interni</a></li>
+                                    <li><a href="#">gioielli design</a></li>
+                                    <li><a href="#">design di esterni</a></li>
+                                    <li><a href="#">light design</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">come funziona</a></li>
+                            <li class="item-for-registered-user">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img class="img-circle" src="images/Pages/pagina_partecipante/oval-314.png">Hi Isabelle<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">PORTOFOLIO</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">PROFILO</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header-container">
+            <div class="row participants-info">
+                <div class="col-lg-2 col-sm-3 col-md-2 col-xs-12">
+                    <div class="img-wrap participant-img">
+                        <a href="#"><div class="edit-photos">+</div></a>
+                        <img class="img-circle" src="images/Pages/pagina_partecipante/oval-314.png">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-sm-9 col-md-9 col-xs-12">
+                    <p class="participant-name" style="text-transform: none">Isabelle H</p>
+                    <p class="participant-text">Night Of seas fruitful image that man of beast heaven green own it after and shall. Likeness shall which creepeth to heaven living open fruit bring created</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="content">
+        <div class="container edit-profile-wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 edit-profile-header">
+                    <ul class="nav nav-tabs edit-profile-list" role="tablist">
+                        <li class="active edit-profile-item"><a href="#personal-information"  aria-controls="home" role="tab" data-toggle="tab">Informazioni Personali</a></li>
+                        <li class="edit-profile-item"><a href="#specialization" aria-controls="profile" role="tab" data-toggle="tab">Specializzazioni</a></li>
+                        <li class="edit-profile-item"><a href="#password-security"  aria-controls="profile" role="tab" data-toggle="tab">Password & Security</a></li>
+                        <li class="edit-profile-item"><a href="#notification"  aria-controls="profile" role="tab" data-toggle="tab">Notification</a></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="tab-content edit-profile-content">
+                    <div role="tabpanel" class="tab-pane edit-profile-content-body active" id="personal-information">
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="user-email">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-email.png">INDIRIZZO EMAIL</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <input class="edit-profile-input" type="email" id="user-email" placeholder="email">
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">modifica</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="user-name">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-man.png">NOME</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="user-name" placeholder="Nome">
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">modifica</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="user-surname">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-man.png">COGNOME</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="user-surname" placeholder="Cognome">
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">modifica</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="user-city">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-lacate.png">CITTA’</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="user-city" placeholder="Citta’">
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">modifica</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="user-mobile">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-mobile.png">MOBILE</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="user-mobile" placeholder="Mobile">
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">modifica</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="user-description">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-descr.png">DESCRIZIONE</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <textarea class="edit-profile-input" id="user-description" placeholder="Description"></textarea>
+
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">modifica</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane edit-profile-content-body" id="specialization">
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="choose-industrial">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-industrial.png">INDUSTRIAL DESIGN</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="choose-industrial" disabled value="attivo" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">disattiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="choose-transport">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-transport.png">TRANSPORT DESIGN</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="choose-transport" disabled value="disattivo" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn active-btn" type="submit">attiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="choose-jewellery">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-jewellery.png">JEWELLERY DESIGN</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="choose-jewellery" disabled value="disattivo" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn active-btn" type="submit">attiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="choose-light">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-light.png">LIGHT DESIGN</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="choose-light" disabled value="attivo" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">disattiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="choose-esterni">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-esterni.png">DESIGN DI ESTERNI</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="choose-esterni" disabled value="attivo" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">disattiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="choose-interni">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-interni.png">DESIGN DI INTERNI</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="choose-interni" disabled value="attivo" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">disattiva</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane edit-profile-content-body" id="password-security">
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="old-password">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-hand.png">OLD PASSWORD</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <input class="edit-profile-input" type="password" id="old-password" placeholder="*******">
+                                </div>
+                            </div>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="new-password">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-hand.png">NEW PASSWORD</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <input class="edit-profile-input" type="password" id="new-password" placeholder="*******">
+                                </div>
+                            </div>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="repeat-new-password">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-hand.png">CONFIRM NEW PASS</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                    <input class="edit-profile-input" type="password" id="repeat-new-password" placeholder="*******">
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn active-btn" type="submit">SALVA</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p>The password need to be minimum 8 character and with number and alphabets</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane edit-profile-content-body" id="notification">
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="notifications-industrial">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-industrial.png">INDUSTRIAL DESIGN</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="notifications-industrial" disabled value="Ricevi notifiche per nuovi contest" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">disattiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="notifications-transport">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-transport.png">TRANSPORT DESIGN</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="notifications-transport" disabled value="Non Ricevi notifiche per nuovi contest" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn active-btn" type="submit">attiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="notifications-jewellery">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-jewellery.png">JEWELLERY DESIGN</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="notifications-jewellery" disabled value="Non Ricevi notifiche per nuovi contest" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn active-btn" type="submit">attiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="notifications-light">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-light.png">LIGHT DESIGN</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="notifications-light" disabled value="Ricevi notifiche per nuovi contest" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">disattiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="notifications-esterni">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-esterni.png">DESIGN DI ESTERNI</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="notifications-esterni" disabled value="Ricevi notifiche per nuovi contest" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">disattiva</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-group edit-profile-form-group row">
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                    <label class="control-label edit-profile-label" for="notifications-interni">
+                                        <img src="images/Pages/pagina_partecipante_login/icon-small-interni.png">DESIGN DI INTERNI</label>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                    <input class="edit-profile-input" type="text" id="notifications-interni" disabled value="Ricevi notifiche per nuovi contest" >
+                                </div>
+                                <div class="col-lg-2 col-md-1 col-sm-2 col-xs-12">
+                                    <button class="btn edit-profile-btn" type="submit">disattiva</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</div>
+<footer>
+    <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+        <div class="logo-footer">
+            <a href="#">
+                <img src="images/Pages/homepage/header/logo_designando.png">
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="footer-menu">
+            <ul class="navbar-nav">
+                <li><a href="#">contatti</a> </li>
+                <li><a href="#">privacy policy</a> </li>
+                <li><a href="#">terms</a> </li>
+                <li><a href="#">chi siamo</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+        <div class="social-icons">
+            <ul>
+                <li><a href="#"><img src="images/Pages/homepage/footer/icon-tv.png"></a></li>
+                <li><a href="#"><img src="images/Pages/homepage/footer/icon-fb.png"></a> </li>
+                <li><a href="#"><img src="images/Pages/homepage/footer/icon-gl.png"></a> </li>
+                <li><a href="#"><img src="images/Pages/homepage/footer/icon-in.png"></a> </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Effettual il login</h4>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-default btn-block lg-facebook" >
+                    <i class="fa fa-facebook" aria-hidden="true"></i>login with facebook</button>
+                <button class="btn btn-default btn-block lg-linkedin" >
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>login with linkedin</button>
+                <p>oppure</p>
+                <form role="form">
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" id="login-email" placeholder="email">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" id="login-password" placeholder="password">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-success btn-block">iscriviti</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#">password dimenticata?</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
+<script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
