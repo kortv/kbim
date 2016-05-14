@@ -9,7 +9,7 @@ export default function getPageApi(path) {
   console.log(secondPath);
   switch (mainPath) {
   case '/':
-    getCategory.call(this, paths.main);
+    getCategory.call(this, paths.category);
     break;
 
   case '/page':

@@ -3,8 +3,10 @@ export default function getStaticPageList() {
   axios.get('/app/JSON/staticpagelist.json')
   .then((data) => {
     console.log(data);
+    const staticPageList = data.data.children;
+    const staticOne = staticPageList.splice(0, 1)[0];
     this.setState({
-      staticPageList: data.data.children,
+      staticPageList, staticOne,
     });
   })
   .catch((response) => {

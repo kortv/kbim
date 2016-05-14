@@ -22,6 +22,8 @@ export default class App extends Component {
       category: [],
       path: window.location.pathname.replace(/(\/public)|(index\.html)/g, ''),
       staticPageList: [],
+      staticOne: {},
+      staticCont: {},
     };
   }
 
@@ -35,7 +37,9 @@ export default class App extends Component {
     return (
       <div>
         <div id='content'>
-          <Header category={this.state.category} />
+          <Header
+            category={this.state.category} staticOne={this.state.staticPageList}
+          />
           <CategoryList category={this.state.category} />
           <Block />
           <Company />

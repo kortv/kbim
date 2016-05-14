@@ -19,6 +19,7 @@ export default class StaticPage extends Component {
       category: [],
       path: window.location.pathname.replace(/(\/public)|(index\.html)/g, ''),
       staticPageList: [],
+      staticOne: {},
       staticCont: {},
     };
   }
@@ -33,7 +34,9 @@ export default class StaticPage extends Component {
     return (
       <div>
         <div id='content'>
-          <Header category={this.state.category} />
+          <Header
+            category={this.state.category} staticOne={this.state.staticPageList}
+          />
           <StaticContent staticCont={this.state.staticCont} />
         </div>
         <Footer staticPageList={this.state.staticPageList} />

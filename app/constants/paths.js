@@ -1,5 +1,5 @@
 const paths = {
-  main: '/../app/JSON/category.json',
+  category: '/../app/JSON/category.json'/* 'http://kbim.com.ua/api/categorylist'*/,
   page: 'http://kbim.com.ua/api/staticpage',
 };
 export default paths;

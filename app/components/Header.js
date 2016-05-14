@@ -1,7 +1,7 @@
 import React from 'react';
 import CategoryMenu from './_CategoryList/CategoryMenu';
 
-export default function Header({ category }) {
+export default function Header({ category, staticOne }) {
   const list = category.length ? category.map((obj) => (
     <CategoryMenu category={obj} key={obj.id} />)) :
     <div />;
@@ -35,7 +35,7 @@ export default function Header({ category }) {
                     {list}
                   </ul>
                 </li>
-                <li><a href='#'>come funziona</a></li>
+                <li><a href={`/page/${staticOne.Alias}`}>{staticOne.Title}</a></li>
                 <li><a href='#loginModal' data-toggle='modal'>login</a></li>
                 <li><a href='#'>iscriviti</a></li>
               </ul>
