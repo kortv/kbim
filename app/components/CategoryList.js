@@ -4,7 +4,6 @@ import Category from './_CategoryList/Category';
 export default function CategoryList({ category }) {
   const list = category.length ? category.map((obj) => <Category category={obj} key={obj.id} />) :
     <div />;
-  console.log(category.length);
   return (
 
     <div className='container' id='first-category-wrap'>

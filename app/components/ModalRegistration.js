@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ModalRegistration() {
+export default function ModalRegistration({ handleRegistrationLogin }) {
   return (
 
     <div className='modal fade' id='registrationModal' tabIndex={-1} role='dialog'>
@@ -30,29 +30,30 @@ export default function ModalRegistration() {
                   <i className='fa fa-linkedin-square' aria-hidden='true' />connect with linkedin
                 </button>
                 <p>oppure</p>
-                <form role='form'>
+                <form role='form' name='user' onSubmit={handleRegistrationLogin}>
                   <div className='row'>
                     <div className='form-group col-md-6 col-sm-6 col-xs-12'>
                       <input
+                      name='first_name'
                       type='text' className='form-control' id='reg-designer-name' placeholder='nome'
                       />
                     </div>
                     <div className='form-group col-md-6 col-sm-6 col-xs-12'>
                       <input
-                      type='text' className='form-control'
+                      name='second_name' type='text' className='form-control'
                       id='reg-designer-surname' placeholder='cognome'
                       />
                     </div>
                   </div>
                   <div className='form-group'>
                     <input
-                    type='email' className='form-control'
+                    name='email' type='email' className='form-control'
                     id='reg-designer-email' placeholder='email'
                     />
                   </div>
                   <div className='form-group'>
                     <input
-                    type='password' className='form-control'
+                    name='password' type='password' className='form-control'
                     id='reg-designer-password' placeholder='password'
                     />
                   </div>
@@ -68,33 +69,36 @@ export default function ModalRegistration() {
                   connect with linkedin
                 </button>
                 <p>oppure</p>
-                <form role='form'>
+                <form role='form' name='company' onSubmit={handleRegistrationLogin}>
                   <div className='form-group'>
                     <input
-                    type='text' className='form-control'
+                    name='company_name' type='text' className='form-control'
                     id='reg-company-name' placeholder='nome azienda'
                     />
                   </div>
                   <div className='row'>
                     <div className='form-group col-md-6 col-sm-6 col-xs-12'>
                       <input
-                      type='text' className='form-control' id='reg-name' placeholder='nome'
+                      name='first_name' type='text' className='form-control'
+                      id='reg-name' placeholder='nome'
                       />
                     </div>
                     <div className='form-group col-md-6 col-sm-6 col-xs-12'>
                       <input
-                      type='text' className='form-control' id='reg-surname' placeholder='cognome'
+                      name='second_name' type='text' className='form-control'
+                      id='reg-surname' placeholder='cognome'
                       />
                     </div>
                   </div>
                   <div className='form-group'>
                     <input
-                    type='email' className='form-control' id='reg-email' placeholder='email'
+                    name='email' type='email' className='form-control'
+                    id='reg-email' placeholder='email'
                     />
                   </div>
                   <div className='form-group'>
                     <input
-                    type='password' className='form-control'
+                    type='password' className='form-control' name='password'
                     id='reg-password' placeholder='password'
                     />
                   </div>

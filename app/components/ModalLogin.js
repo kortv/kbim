@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ModalLogin() {
+export default function ModalLogin({ handleRegistrationLogin }) {
   return (
 
     <div className='modal fade' id='loginModal' tabIndex={-1} role='dialog'>
@@ -15,13 +15,17 @@ export default function ModalLogin() {
             <button className='btn btn-default btn-block lg-linkedin'>
               <i className='fa fa-linkedin-square' aria-hidden='true' />login with linkedin</button>
             <p>oppure</p>
-            <form role='form'>
+            <form role='form' onSubmit={handleRegistrationLogin}>
               <div className='form-group'>
-                <input type='email' className='form-control' id='login-email' placeholder='email' />
+                <input
+                  type='email' className='form-control' id='login-email' placeholder='email'
+                  name='email'
+                />
               </div>
               <div className='form-group'>
                 <input
                 type='password' className='form-control' id='login-password' placeholder='password'
+                name='password'
                 />
               </div>
               <button

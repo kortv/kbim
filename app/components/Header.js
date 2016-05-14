@@ -1,11 +1,24 @@
 import React from 'react';
 import CategoryMenu from './_CategoryList/CategoryMenu';
 
-export default function Header({ category, staticOne }) {
+export default function Header({ category, staticOne, isLogedIn }) {
+  const loginBtn = !isLogedIn ? (<li><a href='#loginModal' data-toggle='modal'>login</a></li>) : '';
+  const registrationBtn = !isLogedIn ? (
+    <div className='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+      <div className='reg-btn-row'>
+        <a
+        href='#registrationModal' data-toggle='modal'
+        className='btn btn-default' id='registration-btn'
+        >
+          REGISTRATI a
+          <span>DESIGNANDO</span></a>
+        <p>è gratis e ci vogliono 10secondi</p>
+      </div>
+    </div>
+) : '';
   const list = category.length ? category.map((obj) => (
     <CategoryMenu category={obj} key={obj.id} />)) :
     <div />;
-  console.log(category.length);
   return (
 
     <header>
@@ -36,7 +49,7 @@ export default function Header({ category, staticOne }) {
                   </ul>
                 </li>
                 <li><a href={`/page/${staticOne.Alias}`}>{staticOne.Title}</a></li>
-                <li><a href='#loginModal' data-toggle='modal'>login</a></li>
+                {loginBtn}
                 <li><a href='#'>iscriviti</a></li>
               </ul>
             </div>
@@ -57,17 +70,7 @@ export default function Header({ category, staticOne }) {
                   La prima piattaforma di w2w: trova lavoro con il lavoro
                 </p>
               </div>
-              <div className='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-                <div className='reg-btn-row'>
-                  <a
-                  href='#registrationModal' data-toggle='modal'
-                  className='btn btn-default' id='registration-btn'
-                  >
-                    REGISTRATI a
-                    <span>DESIGNANDO</span></a>
-                  <p>è gratis e ci vogliono 10secondi</p>
-                </div>
-              </div>
+              {registrationBtn}
             </div>
             <div className='row'>
               <div className='col-lg-4 col-md-4 col-md-offset-2 col-sm-5'>

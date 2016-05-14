@@ -36,6 +36,8 @@
         "window": true,
         "alert": true,
         "FormData": true,
-        "sessionStorage": true
+        "sessionStorage": true,
+        "localStorage": true,
+        "$": true
     }
 }
