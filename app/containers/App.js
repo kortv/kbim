@@ -11,7 +11,6 @@ import ModalRegistration from './../components/ModalRegistration';
 import getStaticPageList from './../api/getStaticPageList';
 import getPageApi from './../events/getPageApi';
 
-
 export default class App extends Component {
 
   constructor(props) {
@@ -30,7 +29,7 @@ export default class App extends Component {
   componentDidMount() {
     console.log(this.state.path);
     this.getPageApi(this.state.path);
-    this.getStaticPageList(this.state.path);
+    this.getStaticPageList();
   }
 
   render() {
