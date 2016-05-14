@@ -38,7 +38,7 @@ export default class App extends Component {
       <div>
         <div id='content'>
           <Header
-            category={this.state.category} staticOne={this.state.staticPageList}
+            category={this.state.category} staticOne={this.state.staticOne}
           />
           <CategoryList category={this.state.category} />
           <Block />

@@ -35,7 +35,7 @@ export default class StaticPage extends Component {
       <div>
         <div id='content'>
           <Header
-            category={this.state.category} staticOne={this.state.staticPageList}
+            category={this.state.category} staticOne={this.state.staticOne}
           />
           <StaticContent staticCont={this.state.staticCont} />
         </div>
