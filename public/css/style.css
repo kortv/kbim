@@ -144,7 +144,7 @@ header .navbar-nav>li>a:focus{
     top: -36px;
     left: 0;
     width: 100%;
-    background: url("images/Pages/homepage/header/line-content.png") no-repeat;
+    background: url("/public/images/Pages/homepage/header/line-content.png") no-repeat;
     background-position: 150px 31px;
 
 }
@@ -250,28 +250,28 @@ footer .social-icons{
 
 #industrial{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63) 0%, transparent 100%),
-            url("images/Pages/homepage/content/categories/image-industrial.png");
+            url("/public/images/Pages/homepage/content/categories/image-industrial.png");
 }
 #trans{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63) 0%, transparent 100%),
-    url("images/Pages/homepage/content/categories/image-transport.png");
+    url("/public/images/Pages/homepage/content/categories/image-transport.png");
 }
 #interni{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63) 0%, transparent 100%),
-    url("images/Pages/homepage/content/categories/image-interni.png");
+    url("/public/images/Pages/homepage/content/categories/image-interni.png");
 }
 #gioelli{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63) 0%, transparent 100%),
-    url("images/Pages/homepage/content/categories/image-jewellery.png");
+    url("/public/images/Pages/homepage/content/categories/image-jewellery.png");
 }
 #esterni{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63) 0%, transparent 100%),
-    url("images/Pages/homepage/content/categories/image-esterni.png");
+    url("/public/images/Pages/homepage/content/categories/image-esterni.png");
 
 }
 #light{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63) 0%, transparent 100%),
-    url("images/Pages/homepage/content/categories/image-light.png");
+    url("/public/images/Pages/homepage/content/categories/image-light.png");
 }
 .header-category h2{
     color: #353535;
@@ -290,7 +290,7 @@ footer .social-icons{
     width: 89px;
     height: 5px;
     display: inline-block;
-    background: url("images/Pages/homepage/content/line.png");
+    background: url("/public/images/Pages/homepage/content/line.png");
 }
 #first-category-wrap .row div .btn{
     font-size: 16px;
@@ -307,7 +307,7 @@ footer .social-icons{
     margin: 80px 0 105px;
 }
 #two-content-wrap{
-    background-image: url("images/Pages/homepage/content/headers2x.png");
+    background-image: url("/public/images/Pages/homepage/content/headers2x.png");
 }
 #static-wrap{
     margin-bottom: 50px;
@@ -608,7 +608,7 @@ footer .social-icons{
     color: white;
     text-align: left;
     margin-top: 80px;
-    background: url("images/Pages/homepage/header/line-content.png") repeat-x;
+    background: url("/public/images/Pages/homepage/header/line-content.png") repeat-x;
     background-position: left 0px bottom 3px;
 }
 
@@ -711,11 +711,11 @@ span.number{
     font-size: 16px;
     line-height: 40px;
     color: #303531;
-    background: url("images/Pages/pagina_lista_contest/icon-open.png") no-repeat right 0;
+    background: url("/public/images/Pages/pagina_lista_contest/icon-open.png") no-repeat right 0;
 
 }
 a.open-control-filter{
-    background: url("images/Pages/pagina_lista_contest/icon-close.png") no-repeat right 0;
+    background: url("/public/images/Pages/pagina_lista_contest/icon-close.png") no-repeat right 0;
 }
 .btn-control-filter:hover, .btn-control-filter:visited{
     color: #303531;
@@ -818,22 +818,22 @@ a.open-control-filter{
     padding: 0 1px;
 }
 .icon-transport{
-    background-image: url("images/Pages/homepage/content/categories/icon-transport.png");
+    background-image: url("/public/images/Pages/homepage/content/categories/icon-transport.png");
 }
 .icon-industrial{
-    background-image: url("images/Pages/homepage/content/categories/icon-industrial.png");
+    background-image: url("/public/images/Pages/homepage/content/categories/icon-industrial.png");
 }
 .icon-interni{
-    background-image: url("images/Pages/homepage/content/categories/icon-interni.png");
+    background-image: url("/public/images/Pages/homepage/content/categories/icon-interni.png");
 }
 .icon-jewellery{
-    background-image: url("images/Pages/homepage/content/categories/icon-jewellery.png");
+    background-image: url("/public/images/Pages/homepage/content/categories/icon-jewellery.png");
 }
 .icon-esterni{
-    background-image: url("images/Pages/homepage/content/categories/icon-esterni.png");
+    background-image: url("/public/images/Pages/homepage/content/categories/icon-esterni.png");
 }
 .icon-light{
-    background-image: url("images/Pages/homepage/content/categories/icon-light.png");
+    background-image: url("/public/images/Pages/homepage/content/categories/icon-light.png");
 }
 .title-contest{
     display: block;
@@ -884,10 +884,10 @@ a.open-control-filter{
 
 }
 .date-wrap{
-    background-image: url("images/Pages/pagina_azienda_pubblic/content/icon-thin.png");
+    background-image: url("/public/images/Pages/pagina_azienda_pubblic/content/icon-thin.png");
 }
 .participants-wrap{
-    background-image: url("images/Pages/pagina_azienda_pubblic/content/icon-men.png");
+    background-image: url("/public/images/Pages/pagina_azienda_pubblic/content/icon-men.png");
 }
 .participants-wrap p{
     color: #c81d66;
@@ -925,7 +925,7 @@ a.go-to-company:visited{
 /**************************************************/
 .public-company-header{
     background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.53) 100%),
-            url("images/Pages/pagina_azienda_pubblic/header/background-header1.png");
+            url("/public/images/Pages/pagina_azienda_pubblic/header/background-header1.png");
     background-repeat:no-repeat;
     background-size: cover;
     color: #f4f4f4;
@@ -979,7 +979,7 @@ a.go-to-company:visited{
 
 }
 .company-site{
-    background: url("images/Pages/pagina_azienda_pubblic/header/icon-site.png") 0 5px no-repeat;
+    background: url("/public/images/Pages/pagina_azienda_pubblic/header/icon-site.png") 0 5px no-repeat;
     padding-left: 32px;
 }
 .category-list{
@@ -1167,7 +1167,7 @@ header #bs-example-navbar-collapse-1 .item-for-registered-user .dropdown-menu li
 }
 
 header #bs-example-navbar-collapse-1 .dropdown-menu{
-    background: url("images/Pages/homepage/footer/combined-shape.png") no-repeat;
+    background: url("/public/images/Pages/homepage/footer/combined-shape.png") no-repeat;
     background-size: 100% 100%;
     margin-right: -5px;
     border: none;
@@ -1773,5 +1773,3 @@ textarea.edit-profile-input{
     }
 
 }
-
-
