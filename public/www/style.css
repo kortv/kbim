@@ -1220,7 +1220,7 @@ header #bs-example-navbar-collapse-1 .item-for-registered-user:hover>a,  header 
 
 }
 .edit-profile-form-group{
-    padding: 0 97px;
+    padding: 0 90px;
     margin-bottom: 17px;
 
 }
@@ -1241,10 +1241,12 @@ header #bs-example-navbar-collapse-1 .item-for-registered-user:hover>a,  header 
     background-color: #c81d66;
     border-radius: 1px;
     text-align: left;
-    padding: 0 5px 0 24px;
+    padding: 0 0 0 21px;
+    margin: 0;
+	white-space: nowrap;
     }
 .edit-profile-label img{
-    margin-right: 24px;
+    margin-right: 21px;
 }
 .edit-profile-input{
     width: 100%;
@@ -1299,6 +1301,11 @@ textarea.edit-profile-input{
 .edit-profile-form-group input[disabled]{
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.icon-img{
+    width: 30px;
+    float: left;
+    margin-right: 21px;
 }
 /*************************************************/
 @media (min-width: 1300px) {

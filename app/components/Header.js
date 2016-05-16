@@ -1,5 +1,4 @@
 import React from 'react';
-import CategoryMenu from './_CategoryList/CategoryMenu';
 
 export default function Header({ category, staticOne, isLogedIn }) {
   const loginBtn = !isLogedIn ? (<li><a href='#loginModal' data-toggle='modal'>login</a></li>) : '';
@@ -17,7 +16,8 @@ export default function Header({ category, staticOne, isLogedIn }) {
     </div>
 ) : '';
   const list = category.length ? category.map((obj) => (
-    <CategoryMenu category={obj} key={obj.id} />)) :
+    <li key={obj.id}><a href={`/category/${obj.slug}`}>{obj.name}</a></li>
+    )) :
     <div />;
   return (
 
@@ -26,7 +26,7 @@ export default function Header({ category, staticOne, isLogedIn }) {
         <div className='row'>
           <div className='col-lg-5  col-md-5 col-sm-5 col-xs-12' id='logo-wrap'>
             <div id='logo'>
-              <a href='#'>
+              <a href='/'>
                 <img src='/public/images/Pages/homepage/header/logo_designando.png' />
               </a>
             </div>

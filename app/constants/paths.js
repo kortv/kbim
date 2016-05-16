@@ -1,5 +1,5 @@
 const paths = {
-  category: '/../app/JSON/category.json'/* 'http://kbim.com.ua/api/categorylist'*/,
+  category: '/app/JSON/category.json'/* 'http://kbim.com.ua/api/categorylist'*/,
   page: 'http://kbim.com.ua/api/staticpage',
   registration: 'http://kbim.com.ua/api/registration',
   login: 'http://kbim.com.ua/api/auth',

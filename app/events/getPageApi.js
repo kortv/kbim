@@ -1,4 +1,3 @@
-import getCategory from './../api/getCategory';
 import getStaticCont from './../api/getStaticCont';
 import paths from './../constants/paths';
 
@@ -9,16 +8,13 @@ export default function getPageApi(path) {
   console.log(secondPath);
   switch (mainPath) {
   case '/':
-    getCategory.call(this, paths.category);
     break;
 
   case '/page':
-    getCategory.call(this, paths.main);
     getStaticCont.call(this, `${paths.page}${secondPath}`);
     break;
 
   case '/category':
-    getCategory.call(this, paths.main);
     break;
 
   default:

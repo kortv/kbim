@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './../SCSS/main.scss';
+
+import StaticContent from './../components/StaticContent';
+
 import Header from './../components/Header';
 import CategoryList from './../components/CategoryList';
 import Block from './../components/Block';
@@ -9,16 +12,21 @@ import ModalLogin from './../components/ModalLogin';
 import ModalRegistration from './../components/ModalRegistration';
 import ModalSuccess from './../components/ModalSuccess';
 
+import getCategory from './../api/getCategory';
 import postRegistrationLogin from './../api/postRegistrationLogin';
 import getStaticPageList from './../api/getStaticPageList';
+
 import getPageApi from './../events/getPageApi';
 import handleRegistrationLogin from './../events/handleRegistrationLogin';
 import handlePickCategory from './../events/handlePickCategory';
+
+import paths from './../constants/paths';
 
 export default class App extends Component {
 
   constructor(props) {
     super(props);
+    this.getCategory = getCategory.bind(this);
     this.postRegistrationLogin = postRegistrationLogin.bind(this);
     this.getStaticPageList = getStaticPageList.bind(this);
     this.getPageApi = getPageApi.bind(this);
@@ -40,6 +48,7 @@ export default class App extends Component {
     // console.log(this.state.path);
     this.getPageApi(this.state.path);
     this.getStaticPageList();
+    this.getCategory(paths.category);
     // setTimeout(() => { this.postRegistrationLogin(); }, 3000);
   }
 
@@ -51,9 +60,13 @@ export default class App extends Component {
             isLogedIn={this.state.isLogedIn}
             category={this.state.category} staticOne={this.state.staticOne}
           />
-          <CategoryList category={this.state.category} />
-          <Block />
-          <Company />
+          {this.props.static &&
+            <StaticContent staticCont={this.state.staticCont} />}
+
+          {this.props.main &&
+            <CategoryList category={this.state.category} />}
+          {this.props.main && <Block />}
+          {this.props.main && <Company />}
         </div>
         <Footer staticPageList={this.state.staticPageList} />
         <ModalLogin handleRegistrationLogin={this.handleRegistrationLogin} />
