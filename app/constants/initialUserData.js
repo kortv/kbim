@@ -1,8 +1,8 @@
 const user = {
   personal: [{
-    email: 'asd@asd.asd',
-    name: 'No name',
-    second_name: 'No name',
+    email: '',
+    name: '',
+    second_name: '',
     city: 'Moscow',
     tel: '+380939838072',
     description: 'somedescription',
