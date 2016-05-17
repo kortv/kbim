@@ -11,5 +11,7 @@ if (routing === '/') {
 } else if (/\/page/.test(routing)) {
   render(<App static />, document.getElementById('app'));
 } else if (/\/edit/.test(routing)) {
-  render(<UserPage static />, document.getElementById('app'));
+  render(<UserPage edit />, document.getElementById('app'));
+} else if (/\/user/.test(routing)) {
+  render(<UserPage show />, document.getElementById('app'));
 }

@@ -3,6 +3,7 @@ const paths = {
   page: 'http://kbim.com.ua/api/staticpage',
   registration: 'http://kbim.com.ua/api/registration',
   login: 'http://kbim.com.ua/api/auth',
+  userData: '/app/JSON/api-user.json',
   user: 'http://kbim.com.ua/api/user',
 };
 

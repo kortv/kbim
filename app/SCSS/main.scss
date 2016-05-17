@@ -1,3 +1,12 @@
 #content {
     min-height: 100vh;
 }
+#custom-file-input-pic {
+  position: absolute;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  top: 15px;
+  cursor: pointer;
+  opacity: 0;
+}

@@ -33,10 +33,15 @@ export default function UserEditProfile() {
                 <div className='form-group edit-profile-form-group row'>
                   <div className='col-lg-3 col-md-4 col-sm-3 col-xs-12'>
                     <label className='control-label edit-profile-label' htmlFor='user-email'>
-                      <img src='/public/images/Pages/pagina_partecipante_login/icon-email.png' />INDIRIZZO EMAIL</label>
+                      <img src='/public/images/Pages/pagina_partecipante_login/icon-email.png' />
+                      INDIRIZZO EMAIL
+                    </label>
                   </div>
                   <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
-                    <input className='edit-profile-input' type='email' id='user-email' placeholder='email' />
+                    <input
+                      className='edit-profile-input' type='email'
+                      id='user-email' placeholder='email'
+                    />
                   </div>
                   <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
                     <button className='btn edit-profile-btn' type='submit'>modifica</button>
@@ -47,7 +52,9 @@ export default function UserEditProfile() {
                 <div className='form-group edit-profile-form-group row'>
                   <div className='col-lg-3 col-md-4 col-sm-3 col-xs-12'>
                     <label className='control-label edit-profile-label' htmlFor='user-name'>
-                      <img src='/public/images/Pages/pagina_partecipante_login/icon-man.png' />NOME</label>
+                      <img src='/public/images/Pages/pagina_partecipante_login/icon-man.png' />
+                      NOME
+                    </label>
                   </div>
                   <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
                     <input className='edit-profile-input' type='text' id='user-name' placeholder='Nome' />
