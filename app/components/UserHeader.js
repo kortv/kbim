@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function UserHeader({ category, staticOne, isLogedIn }) {
+export default function UserHeader({ category, staticOne, isLogedIn, onFile }) {
   const loginBtn = !isLogedIn ? (<li><a href='#loginModal' data-toggle='modal'>login</a></li>) : '';
   const registrationBtn = !isLogedIn ? (
     <div className='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
@@ -40,12 +40,7 @@ export default function UserHeader({ category, staticOne, isLogedIn }) {
                 <li className='dropdown'>
                   <a href='#' className='dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>categorie<i className='fa fa-chevron-down' aria-hidden='true' /></a>
                   <ul className='dropdown-menu dropdown-menu-right'>
-                    <li><a href='#'>industrial design</a></li>
-                    <li><a href='#'>transportation design</a></li>
-                    <li><a href='#'>design di interni</a></li>
-                    <li><a href='#'>gioielli design</a></li>
-                    <li><a href='#'>design di esterni</a></li>
-                    <li><a href='#'>light design</a></li>
+                    {list}
                   </ul>
                 </li>
                 <li><a href='#'>come funziona</a></li>
@@ -69,7 +64,9 @@ export default function UserHeader({ category, staticOne, isLogedIn }) {
         <div className='row participants-info'>
           <div className='col-lg-2 col-sm-3 col-md-2 col-xs-12'>
             <div className='img-wrap participant-img'>
-              <a href='#'><div className='edit-photos'>+</div></a>
+              <a href='#'>
+                <input onChange={onFile} type='file' class='custom-file-input' />
+                <div className='edit-photos'>+</div></a>
               <img className='img-circle' src='/public/images/Pages/pagina_partecipante/oval-314.png' />
             </div>
           </div>

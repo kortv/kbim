@@ -15,6 +15,7 @@ import getStaticPageList from './../api/getStaticPageList';
 
 import handleRegistrationLogin from './../events/handleRegistrationLogin';
 import handlePickCategory from './../events/handlePickCategory';
+import onFile from './../events/onFile';
 
 import paths from './../constants/paths';
 
@@ -22,6 +23,7 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
+    this.onFile = onFile.bind(this);
     this.getCategory = getCategory.bind(this);
     this.postRegistrationLogin = postRegistrationLogin.bind(this);
     this.getStaticPageList = getStaticPageList.bind(this);
@@ -49,7 +51,7 @@ export default class App extends Component {
       <div>
         <div id='content'>
           <UserHeader
-            isLogedIn={this.state.isLogedIn}
+            isLogedIn={this.state.isLogedIn} onFile={this.onFile}
             category={this.state.category} staticOne={this.state.staticOne}
           />
           <UserEditProfile />
