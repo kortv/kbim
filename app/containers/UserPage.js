@@ -10,27 +10,31 @@ import ModalLogin from './../components/ModalLogin';
 import ModalRegistration from './../components/ModalRegistration';
 import ModalSuccess from './../components/ModalSuccess';
 
+import getFullUserData from './../api/getFullUserData';
 import getUserData from './../api/getUserData';
 import getCategory from './../api/getCategory';
 import postRegistrationLogin from './../api/postRegistrationLogin';
 import getStaticPageList from './../api/getStaticPageList';
 
+import handleUserSubmit from './../events/handleUserSubmit';
 import handleRegistrationLogin from './../events/handleRegistrationLogin';
 import handlePickCategory from './../events/handlePickCategory';
 import onFile from './../events/onFile';
 
 import paths from './../constants/paths';
 
-export default class App extends Component {
+export default class UserPage extends Component {
 
   constructor(props) {
     super(props);
+    this.getFullUserData = getFullUserData.bind(this);
     this.getUserData = getUserData.bind(this);
     this.onFile = onFile.bind(this);
     this.getCategory = getCategory.bind(this);
     this.postRegistrationLogin = postRegistrationLogin.bind(this);
     this.getStaticPageList = getStaticPageList.bind(this);
     this.handleRegistrationLogin = handleRegistrationLogin.bind(this);
+    this.handleUserSubmit = handleUserSubmit.bind(this);
     this.handlePickCategory = handlePickCategory.bind(this);
     this.state = {
       category: [],
@@ -44,7 +48,11 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    this.getUserData(paths.userData);
+    if (this.props.show) {
+      this.getUserData(paths.userData);
+    } else if (this.props.edit) {
+      this.getFullUserData(paths.user);
+    }
     this.getStaticPageList();
     this.getCategory(paths.category);
   }
@@ -58,7 +66,10 @@ export default class App extends Component {
             isLogedIn={this.state.isLogedIn} onFile={this.onFile}
             category={this.state.category} staticOne={this.state.staticOne}
           />
-        {this.props.edit && <UserEditProfile />}
+        {this.props.edit && <UserEditProfile
+          profile={this.state.userData} handleUserSubmit={this.handleUserSubmit}
+          allCategory={this.state.category}
+        />}
         {this.props.show && <UserShowProfile />}
         </div>
         <Footer staticPageList={this.state.staticPageList} />

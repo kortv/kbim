@@ -6,15 +6,13 @@ const user = {
     city: 'Moscow',
     tel: '+380939838072',
     description: 'somedescription',
-    main_img: 'http://design.kbim.com.ua/images/Pages/pagina_partecipante/oval-314.png',
+    main_img: '/public/pic.png',
   }],
   specialization: [{
-    'transportation-design': true,
-    'industrial-design': true,
+
   }],
   notification: [{
-    'transportation-design': true,
-    'industrial-design': true,
+
   }],
 };
 

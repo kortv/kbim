@@ -42,7 +42,7 @@ export default function UserHeader({ category, staticOne, isLogedIn, onFile, per
 
                 {isLogedIn && <li className='item-for-registered-user'>
                   <a href='#' className='dropdown-toggle' data-toggle='dropdown'>
-                    <img className='img-circle' src={person.main_img} />
+                    <img className='img-circle' src={`http://kbim.com.ua${person.main_img}` || '/public/pic.png'} />
                     Hi {person.name}<i className='fa fa-chevron-down' aria-hidden='true' /></a>
                   <ul className='dropdown-menu dropdown-menu-right'>
                     <li><a href='#'>PORTOFOLIO</a></li>
@@ -65,7 +65,7 @@ export default function UserHeader({ category, staticOne, isLogedIn, onFile, per
                 <input id='custom-file-input-pic' onChange={onFile} type='file' />
                 <div className='edit-photos'>+</div>
               </a>}
-              <img className='img-circle' src={person.main_img} />
+              <img className='img-circle' src={`http://kbim.com.ua${person.main_img}` || '/public/pic.png'} />
             </div>
           </div>
           <div className='col-lg-7 col-sm-9 col-md-9 col-xs-12'>
