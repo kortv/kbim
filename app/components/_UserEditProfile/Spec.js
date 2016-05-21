@@ -1,16 +1,15 @@
 import React from 'react';
 
-export default function Spec({ userSpec, category, handleUserSubmit }) {
+export default function Spec({ userSpec, category, handleUserSubmit, yesPhrase, noPhrase, name }) {
   const isCategory = !!userSpec[category.slug];
   const btn = isCategory ? (
     <button className='btn edit-profile-btn active-btn' type='submit'>attiva</button>
   ) : (
     <button className='btn edit-profile-btn' type='submit'>disattiva</button>
   );
-  const value = isCategory ? 'attivo' : 'disattivo';
-  console.log(value);
+  const value = isCategory ? yesPhrase : noPhrase;
   return (
-    <form onSubmit={handleUserSubmit} name='specialization'>
+    <form onSubmit={handleUserSubmit} name={name}>
       <div className='form-group edit-profile-form-group row'>
         <div className='col-lg-3 col-md-4 col-sm-4 col-xs-12'>
           <label

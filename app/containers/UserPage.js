@@ -16,6 +16,7 @@ import getCategory from './../api/getCategory';
 import postRegistrationLogin from './../api/postRegistrationLogin';
 import getStaticPageList from './../api/getStaticPageList';
 
+import onChangePass from './../events/onChangePass';
 import handleUserSubmit from './../events/handleUserSubmit';
 import handleRegistrationLogin from './../events/handleRegistrationLogin';
 import handlePickCategory from './../events/handlePickCategory';
@@ -36,13 +37,14 @@ export default class UserPage extends Component {
     this.handleRegistrationLogin = handleRegistrationLogin.bind(this);
     this.handleUserSubmit = handleUserSubmit.bind(this);
     this.handlePickCategory = handlePickCategory.bind(this);
+    this.onChangePass = onChangePass.bind(this);
     this.state = {
       category: [],
       staticPageList: [],
       staticOne: {},
       isLogedIn: !!localStorage.getItem('accessToken'),
       mainName: '',
-      mainMsg: '',
+      mainImg: '',
       userData: {},
     };
   }
@@ -68,7 +70,7 @@ export default class UserPage extends Component {
           />
         {this.props.edit && <UserEditProfile
           profile={this.state.userData} handleUserSubmit={this.handleUserSubmit}
-          allCategory={this.state.category}
+          allCategory={this.state.category} onChangePass={this.onChangePass}
         />}
         {this.props.show && <UserShowProfile />}
         </div>

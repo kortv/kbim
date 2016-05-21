@@ -11,7 +11,21 @@ export default function UserEditProfile(props) {
   const notif = props.profile.notification && props.profile.notification.length ?
     props.profile.notification[0] : user.notification[0];
   const specList = props.allCategory.length ? props.allCategory.map((obj, key) => (
-    <Spec key={key} category={obj} userSpec={spec} handleUserSubmit={props.handleUserSubmit} />)
+    <Spec
+    key={key} category={obj} userSpec={spec}
+    handleUserSubmit={props.handleUserSubmit}
+    yesPhrase='attivo' noPhrase='disattivo'
+    name='specialization'
+    />)
+    ) : '';
+  const notifList = props.allCategory.length ? props.allCategory.map((obj, key) => (
+    <Spec
+    key={key} category={obj} userSpec={notif}
+    handleUserSubmit={props.handleUserSubmit}
+    yesPhrase='Non Ricevi notifiche per nuovi contest'
+    noPhrase='Ricevi notifiche per nuovi contest'
+    name='notification'
+    />)
     ) : '';
   return (
 
@@ -159,8 +173,10 @@ export default function UserEditProfile(props) {
             <div role='tabpanel' className='tab-pane edit-profile-content-body' id='specialization'>
               {specList}
             </div>
-            <div role='tabpanel' className='tab-pane edit-profile-content-body' id='password-security'>
-              <form>
+            <div
+            role='tabpanel' className='tab-pane edit-profile-content-body' id='password-security'
+            >
+              <form onSubmit={props.onChangePass} name='password'>
                 <div className='form-group edit-profile-form-group row'>
                   <div className='col-lg-3 col-md-4 col-sm-3 col-xs-12'>
                     <label className='control-label edit-profile-label' htmlFor='old-password'>
@@ -171,7 +187,7 @@ export default function UserEditProfile(props) {
                   <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
                     <input
                     className='edit-profile-input' type='password'
-                    id='old-password' placeholder='*******'
+                    id='old-password' placeholder='*******' name='old'
                     />
                   </div>
                 </div>
@@ -185,21 +201,25 @@ export default function UserEditProfile(props) {
                   <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
                     <input
                     className='edit-profile-input' type='password'
-                    id='new-password' placeholder='*******'
+                    id='new-password' placeholder='*******' name='new'
                     />
                   </div>
                 </div>
                 <div className='form-group edit-profile-form-group row'>
                   <div className='col-lg-3 col-md-4 col-sm-3 col-xs-12'>
-                    <label className='control-label edit-profile-label' htmlFor='repeat-new-password'>
-                      <img src='/public/images/Pages/pagina_partecipante_login/icon-hand.png' />CONFIRM
+                    <label
+                    className='control-label edit-profile-label' htmlFor='repeat-new-password'
+                    >
+                      <img
+                      src='/public/images/Pages/pagina_partecipante_login/icon-hand.png'
+                      />CONFIRM
                       NEW PASS
                     </label>
                   </div>
                   <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
                     <input
                     className='edit-profile-input' type='password'
-                    id='repeat-new-password' placeholder='*******'
+                    id='repeat-new-password' placeholder='*******' name='new'
                     />
                   </div>
                   <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
@@ -210,126 +230,8 @@ export default function UserEditProfile(props) {
               <p>The password need to be minimum 8 character and with number and alphabets</p>
             </div>
             <div role='tabpanel' className='tab-pane edit-profile-content-body' id='notification'>
-              <form>
-                <div className='form-group edit-profile-form-group row'>
-                  <div className='col-lg-3 col-md-4 col-sm-4 col-xs-12'>
-                    <label className='control-label edit-profile-label' htmlFor='notifications-industrial'>
-                      <img src='/public/images/Pages/pagina_partecipante_login/icon-small-industrial.png' />
-                      INDUSTRIAL DESIGN
-                    </label>
-                  </div>
-                  <div className='col-lg-7 col-md-7 col-sm-6 col-xs-12'>
-                    <input
-                    className='edit-profile-input' type='text'
-                    id='notifications-industrial' disabled
-                    defaultValue='Ricevi notifiche per nuovi contest'
-                    />
-                  </div>
-                  <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
-                    <button className='btn edit-profile-btn' type='submit'>disattiva</button>
-                  </div>
-                </div>
-              </form>
-              <form>
-                <div className='form-group edit-profile-form-group row'>
-                  <div className='col-lg-3 col-md-4 col-sm-4 col-xs-12'>
-                    <label className='control-label edit-profile-label' htmlFor='notifications-transport'>
-                      <img src='/public/images/Pages/pagina_partecipante_login/icon-small-transport.png' />
-                      TRANSPORT DESIGN
-                    </label>
-                  </div>
-                  <div className='col-lg-7 col-md-7 col-sm-6 col-xs-12'>
-                    <input
-                    className='edit-profile-input' type='text'
-                    id='notifications-transport' disabled defaultValue='Non Ricevi notifiche per nuovi contest'
-                    />
-                  </div>
-                  <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
-                    <button className='btn edit-profile-btn active-btn' type='submit'>
-                      attiva
-                    </button>
-                  </div>
-                </div>
-              </form>
-              <form>
-                <div className='form-group edit-profile-form-group row'>
-                  <div className='col-lg-3 col-md-4 col-sm-4 col-xs-12'>
-                    <label className='control-label edit-profile-label' htmlFor='notifications-jewellery'>
-                      <img src='/public/images/Pages/pagina_partecipante_login/icon-small-jewellery.png' />
-                      JEWELLERY DESIGN
-                    </label>
-                  </div>
-                  <div className='col-lg-7 col-md-7 col-sm-6 col-xs-12'>
-                    <input
-                    className='edit-profile-input' type='text'
-                    id='notifications-jewellery' disabled
-                    defaultValue='Non Ricevi notifiche per nuovi contest'
-                    />
-                  </div>
-                  <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
-                    <button className='btn edit-profile-btn active-btn' type='submit'>attiva</button>
-                  </div>
-                </div>
-              </form>
-              <form>
-                <div className='form-group edit-profile-form-group row'>
-                  <div className='col-lg-3 col-md-4 col-sm-4 col-xs-12'>
-                    <label className='control-label edit-profile-label' htmlFor='notifications-light'>
-                      <img src='/public/images/Pages/pagina_partecipante_login/icon-small-light.png' />
-                      LIGHT DESIGN
-                    </label>
-                  </div>
-                  <div className='col-lg-7 col-md-7 col-sm-6 col-xs-12'>
-                    <input
-                    className='edit-profile-input' type='text'
-                    id='notifications-light' disabled
-                    defaultValue='Ricevi notifiche per nuovi contest'
-                    />
-                  </div>
-                  <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
-                    <button className='btn edit-profile-btn' type='submit'>disattiva</button>
-                  </div>
-                </div>
-              </form>
-              <form>
-                <div className='form-group edit-profile-form-group row'>
-                  <div className='col-lg-3 col-md-4 col-sm-4 col-xs-12'>
-                    <label className='control-label edit-profile-label' htmlFor='notifications-esterni'>
-                      <img src='/public/images/Pages/pagina_partecipante_login/icon-small-esterni.png' />
-                      DESIGN DI ESTERNI
-                    </label>
-                  </div>
-                  <div className='col-lg-7 col-md-7 col-sm-6 col-xs-12'>
-                    <input
-                    className='edit-profile-input' type='text'
-                    id='notifications-esterni' disabled defaultValue='Ricevi notifiche per nuovi contest'
-                    />
-                  </div>
-                  <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
-                    <button className='btn edit-profile-btn' type='submit'>disattiva</button>
-                  </div>
-                </div>
-              </form>
-              <form>
-                <div className='form-group edit-profile-form-group row'>
-                  <div className='col-lg-3 col-md-4 col-sm-4 col-xs-12'>
-                    <label className='control-label edit-profile-label' htmlFor='notifications-interni'>
-                      <img src='/public/images/Pages/pagina_partecipante_login/icon-small-interni.png' />
-                      DESIGN DI INTERNI
-                    </label>
-                  </div>
-                  <div className='col-lg-7 col-md-7 col-sm-6 col-xs-12'>
-                    <input
-                    className='edit-profile-input' type='text'
-                    id='notifications-interni' disabled
-                    defaultValue='Ricevi notifiche per nuovi contest'
-                    />
-                  </div>
-                  <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
-                    <button className='btn edit-profile-btn' type='submit'>disattiva</button>
-                  </div>
-                </div>
-              </form>
+
+            {notifList}
             </div>
           </div>
         </div>

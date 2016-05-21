@@ -10,7 +10,7 @@ if (routing === '/') {
   render(<App main />, document.getElementById('app'));
 } else if (/\/page/.test(routing)) {
   render(<App static />, document.getElementById('app'));
-} else if (/\/edit/.test(routing)) {
+} else if (/\/profile\/edit/.test(routing)) {
   render(<UserPage edit />, document.getElementById('app'));
 } else if (/\/user/.test(routing)) {
   render(<UserPage show />, document.getElementById('app'));

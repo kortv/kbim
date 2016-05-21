@@ -6,8 +6,10 @@ export default function postChangeUser(path, body) {
   axios.post(path, body)
   .then((response) => {
     console.log(response);
-    if (response.data.success == 'true') {
+    if (response.data.success) {
       getFullUserData.call(this);
+    } else {
+      alert(response.data.message);
     }
   }).catch((response) => {
     console.log(response);

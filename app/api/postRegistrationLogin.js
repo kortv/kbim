@@ -1,4 +1,5 @@
 import axios from 'axios';
+import paths from './../constants/paths';
 
 export default function postRegistrationLogin(path, body) {
   axios.post(path, body)
@@ -14,6 +15,7 @@ export default function postRegistrationLogin(path, body) {
     this.setState({
       isLogedIn: !!localStorage.getItem('accessToken'),
     });
+    this.getFullUserData(paths.user);
   })
   .catch((response) => {
     console.log('get data error');
