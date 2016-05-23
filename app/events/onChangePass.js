@@ -26,7 +26,7 @@ export default function onChangePass(e) {
   hardEnough = hardEnough && /\d/.test(body.new);
   hardEnough = hardEnough && body.new.length > 7;
   if (!hardEnough) alert('password hard is not enough');
-  if (test) {
+  if (test /* && hardEnough*/) {
     console.log(body, `${paths.user}/${pathName}`);
     body.old = md5(body.old);
     body.new = md5(body.new);

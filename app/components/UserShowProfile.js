@@ -9,12 +9,54 @@ export default function UserShowProfile() {
           <div className='col-lg-12 col-md-12 col-sm-12 col-xs-12 specializations-row'>
             <p>Specializzazioni</p>
             <ul className='find-list-contest category-list '>
-              <li><a href='#'><span className='circle-icon'><img src='/public/images/Pages/homepage/content/categories/icon-industrial.png' /></span></a> </li>
-              <li><a href='#'><span className='circle-icon'><img src='/public/images/Pages/homepage/content/categories/icon-interni.png' /></span></a> </li>
-              <li><a href='#'><span className='circle-icon'><img src='/public/images/Pages/homepage/content/categories/icon-esterni.png' /></span></a> </li>
-              <li><a href='#'><span className='circle-icon'><img src='/public/images/Pages/homepage/content/categories/icon-light.png' /></span></a> </li>
-              <li><a href='#'><span className='circle-icon'><img src='/public/images/Pages/homepage/content/categories/icon-jewellery.png' /></span></a> </li>
-              <li><a href='#'><span className='circle-icon'><img src='/public/images/Pages/homepage/content/categories/icon-transport.png' /></span></a> </li>
+              <li>
+                <a href='#'>
+                  <span className='circle-icon'>
+                    <img
+                    src='/public/images/Pages/homepage/content/categories/icon-industrial.png'
+                    />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <span className='circle-icon'>
+                    <img src='/public/images/Pages/homepage/content/categories/icon-interni.png' />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <span className='circle-icon'>
+                    <img src='/public/images/Pages/homepage/content/categories/icon-esterni.png' />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <span className='circle-icon'>
+                    <img src='/public/images/Pages/homepage/content/categories/icon-light.png' />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <span className='circle-icon'>
+                    <img
+                    src='/public/images/Pages/homepage/content/categories/icon-jewellery.png'
+                    />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <span className='circle-icon'>
+                    <img
+                    src='/public/images/Pages/homepage/content/categories/icon-transport.png'
+                    />
+                  </span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -30,7 +72,8 @@ export default function UserShowProfile() {
                     <div className='logo-categiry icon-transport' />
                   </div>
                   <div className='col-lg-6 col-md-6 col-sm-5 col-xs-9 body-filtration'>
-                    <a href='#' className='title-contest'>TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
+                    <a href='#' className='title-contest'>
+                    TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
                     <a href='#'>Transportation design</a>
                   </div>
                   <div className='col-lg-5 col-md-5 col-sm-6  col-xs-12 small-col'>
@@ -43,7 +86,9 @@ export default function UserShowProfile() {
                       <div className='col-lg-3 col-sm-3 col-md-3 col-xs-3 border-div'>
                         <a href='#'>
                           <div className='logo-company'>
-                            <img src='/public/images/Pages/pagina_azienda_pubblic/content/logo-boffi.png' />
+                            <img
+                            src='/public/images/Pages/pagina_azienda_pubblic/content/logo-boffi.png'
+                            />
                           </div>
                         </a>
                       </div>
@@ -124,7 +169,8 @@ export default function UserShowProfile() {
                     <div className='logo-categiry icon-transport' />
                   </div>
                   <div className='col-lg-6 col-md-6 col-sm-5 col-xs-9 body-filtration'>
-                    <a href='#' className='title-contest'>TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
+                    <a href='#' className='title-contest'>
+                    TITOLO DEL CONTEST DI MASSIMO 60 CARATTERI</a>
                     <a href='#'>Transportation design</a>
                   </div>
                   <div className='col-lg-5 col-md-5 col-sm-6  col-xs-12 small-col'>
@@ -137,7 +183,9 @@ export default function UserShowProfile() {
                       <div className='col-lg-3 col-sm-3 col-md-3 col-xs-3 border-div'>
                         <a href='#'>
                           <div className='logo-company'>
-                            <img src='/public/images/Pages/pagina_azienda_pubblic/content/logo-boffi.png' />
+                            <img
+                            src='/public/images/Pages/pagina_azienda_pubblic/content/logo-boffi.png'
+                            />
                           </div>
                         </a>
                       </div>

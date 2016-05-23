@@ -3,8 +3,9 @@ import './../SCSS/main.scss';
 
 import StaticContent from './../components/StaticContent';
 
-import Header from './../components/Header';
+import NewHeader from './../components/NewHeader';
 import CategoryList from './../components/CategoryList';
+import HeaderContentMain from './../components/_UserHeader/HeaderContentMain';
 import Block from './../components/Block';
 import Company from './../components/Company';
 import Footer from './../components/Footer';
@@ -15,6 +16,7 @@ import ModalSuccess from './../components/ModalSuccess';
 import getCategory from './../api/getCategory';
 import postRegistrationLogin from './../api/postRegistrationLogin';
 import getStaticPageList from './../api/getStaticPageList';
+import getFullUserData from './../api/getFullUserData';
 
 import getPageApi from './../events/getPageApi';
 import handleRegistrationLogin from './../events/handleRegistrationLogin';
@@ -26,6 +28,7 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
+    this.getFullUserData = getFullUserData.bind(this);
     this.getCategory = getCategory.bind(this);
     this.postRegistrationLogin = postRegistrationLogin.bind(this);
     this.getStaticPageList = getStaticPageList.bind(this);
@@ -40,7 +43,7 @@ export default class App extends Component {
       staticCont: {},
       isLogedIn: !!localStorage.getItem('accessToken'),
       mainName: '',
-      mainMsg: '',
+      mainImg: '',
     };
   }
 
@@ -56,10 +59,12 @@ export default class App extends Component {
     return (
       <div>
         <div id='content'>
-          <Header
-            isLogedIn={this.state.isLogedIn}
+          <NewHeader
+            isLogedIn={this.state.isLogedIn} personal={this.state.person || 'a'}
             category={this.state.category} staticOne={this.state.staticOne}
-          />
+          >
+            <HeaderContentMain isLogedIn={this.state.isLogedIn} />
+          </NewHeader>
           {this.props.static &&
             <StaticContent staticCont={this.state.staticCont} />}
 

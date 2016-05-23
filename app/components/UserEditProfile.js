@@ -27,6 +27,25 @@ export default function UserEditProfile(props) {
     name='notification'
     />)
     ) : '';
+  const notifListCompany = [
+    {
+      id: '101',
+      name: 'Riepilogo Giornaliero',
+      slug: 'everyday',
+    },
+    {
+      id: '102',
+      name: 'Notifica per ogni proposta',
+      slug: 'anyproposal',
+    },
+  ].map((obj, key) => (
+    <Spec
+    key={key} category={obj} userSpec={notif}
+    handleUserSubmit={props.handleCompanySubmit}
+    yesPhrase='Non Ricevi notifiche per ogni proposta ricevuta'
+    noPhrase='Ricevi riepilogo giornaliero dei contest attivi e delle proposte'
+    name='notification'
+    />));
   return (
 
     <div className='container edit-profile-wrap'>
@@ -169,6 +188,111 @@ export default function UserEditProfile(props) {
                   </div>
                 </div>
               </form>
+              {person.company_name && <div>
+                <form onSubmit={props.handleUserSubmit} name='web_site'>
+                  <div className='form-group edit-profile-form-group row'>
+                    <div className='col-lg-3 col-md-4 col-sm-3 col-xs-12'>
+                      <label className='control-label edit-profile-label' htmlFor='company-site'>
+                        <img src='/public/images/Pages/pagina_partecipante_login/icon-site.png' />
+                        SITO WEB
+                      </label>
+                    </div>
+                    <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
+                      <input
+                      className='edit-profile-input' type='text'
+                      id='company-site' placeholder={`${person.web_site || 'Sito web'}`}
+                      />
+                    </div>
+                    <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
+                      <button className='btn edit-profile-btn' type='submit'>modifica</button>
+                    </div>
+                  </div>
+                </form>
+                <form onSubmit={props.handleUserSubmit} name='facebook'>
+                  <div className='form-group edit-profile-form-group row'>
+                    <div className='col-lg-3 col-md-4 col-sm-3 col-xs-12'>
+                      <label className='control-label edit-profile-label' htmlFor='company-fb'>
+                        <img
+                        src='/public/images/Pages/pagina_partecipante_login/icon-small-fb.png'
+                        />
+                        FACEBOOK
+                      </label>
+                    </div>
+                    <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
+                      <input
+                      className='edit-profile-input' type='text'
+                      id='company-fb' placeholder={`${person.facebook || 'Facebook'}`}
+                      />
+                    </div>
+                    <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
+                      <button className='btn edit-profile-btn' type='submit'>modifica</button>
+                    </div>
+                  </div>
+                </form>
+                <form onSubmit={props.handleUserSubmit} name='twitter'>
+                  <div className='form-group edit-profile-form-group row'>
+                    <div className='col-lg-3 col-md-4 col-sm-3 col-xs-12'>
+                      <label className='control-label edit-profile-label' htmlFor='company-tv'>
+                        <img
+                        src='/public/images/Pages/pagina_partecipante_login/icon-small-tv.png'
+                        />
+                        TWITTER
+                      </label>
+                    </div>
+                    <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
+                      <input
+                      className='edit-profile-input' type='text'
+                      id='company-tv' placeholder={`${person.twitter || 'Twitter'}`}
+                      />
+                    </div>
+                    <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
+                      <button className='btn edit-profile-btn' type='submit'>modifica</button>
+                    </div>
+                  </div>
+                </form>
+                <form onSubmit={props.handleUserSubmit} name='google'>
+                  <div className='form-group edit-profile-form-group row'>
+                    <div className='col-lg-3 col-md-4 col-sm-3 col-xs-12'>
+                      <label className='control-label edit-profile-label' htmlFor='company-gl'>
+                        <img
+                        src='/public/images/Pages/pagina_partecipante_login/icon-small-gl.png'
+                        />
+                        GOOGLE +
+                      </label>
+                    </div>
+                    <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
+                      <input
+                      className='edit-profile-input' type='text'
+                      id='company-gl' placeholder={`${person.google || 'Google +'}`}
+                      />
+                    </div>
+                    <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
+                      <button className='btn edit-profile-btn' type='submit'>modifica</button>
+                    </div>
+                  </div>
+                </form>
+                <form onSubmit={props.handleUserSubmit} name='linkedin'>
+                  <div className='form-group edit-profile-form-group row'>
+                    <div className='col-lg-3 col-md-4 col-sm-3 col-xs-12'>
+                      <label className='control-label edit-profile-label' htmlFor='company-ln'>
+                        <img
+                        src='/public/images/Pages/pagina_partecipante_login/icon-small-ln.png'
+                        />
+                        LINKEDIN
+                      </label>
+                    </div>
+                    <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
+                      <input
+                      className='edit-profile-input' type='text'
+                      id='company-ln' placeholder={`${person.linkedin || 'Linkedin'}`}
+                      />
+                    </div>
+                    <div className='col-lg-2 col-md-1 col-sm-2 col-xs-12'>
+                      <button className='btn edit-profile-btn' type='submit'>modifica</button>
+                    </div>
+                  </div>
+                </form>
+              </div>}
             </div>
             <div role='tabpanel' className='tab-pane edit-profile-content-body' id='specialization'>
               {specList}
@@ -231,7 +355,7 @@ export default function UserEditProfile(props) {
             </div>
             <div role='tabpanel' className='tab-pane edit-profile-content-body' id='notification'>
 
-            {notifList}
+            {person.company_name ? notifListCompany : notifList}
             </div>
           </div>
         </div>
