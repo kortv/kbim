@@ -17,7 +17,6 @@ export default function handleUserSubmit(e) {
   }
   console.log(value);
 
-
   postChangeUser.call(this,
     `${paths.userdata}/personal/${pathName}`,
     body

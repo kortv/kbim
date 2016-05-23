@@ -13,7 +13,9 @@ export default function handleRegistrationLogin(e) {
   [...formInputsDataAll].forEach((obj) => {
     postBody[obj.name] = obj.value;
   });
+  console.log(postBody.password);
   postBody.password = md5(postBody.password);
+  console.log(postBody.password);
   if (targetForm.name) {
     postBody.type = targetForm.name;
     path = paths.registration;

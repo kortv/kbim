@@ -2,6 +2,7 @@ import axios from 'axios';
 import paths from './../constants/paths';
 
 export default function postRegistrationLogin(path, body) {
+  console.log(path, body);
   axios.post(path, body)
   .then((data) => {
     console.log(data);
