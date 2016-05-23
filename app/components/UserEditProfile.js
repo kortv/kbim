@@ -31,17 +31,17 @@ export default function UserEditProfile(props) {
     {
       id: '101',
       name: 'Riepilogo Giornaliero',
-      slug: 'everyday',
+      slug: 'type_everyday',
     },
     {
       id: '102',
       name: 'Notifica per ogni proposta',
-      slug: 'anyproposal',
+      slug: 'type_eachevent',
     },
   ].map((obj, key) => (
     <Spec
     key={key} category={obj} userSpec={notif}
-    handleUserSubmit={props.handleCompanySubmit}
+    handleUserSubmit={props.handleUserSubmit}
     yesPhrase='Non Ricevi notifiche per ogni proposta ricevuta'
     noPhrase='Ricevi riepilogo giornaliero dei contest attivi e delle proposte'
     name='notification'

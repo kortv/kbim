@@ -21,8 +21,8 @@ export default function HeaderContentComp({
     <div
     className='container header-container public-company-header'
     style={{ backgroundImage:
-      `linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.53) 100%), url("${person.logo_img ?
-        `${paths.host}/${person.logo_img}` : ''}")`,
+      `linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.53) 100%), url("${person.bg_img ?
+        `${paths.host}/${person.bg_img}` : ''}")`,
     }}
     >
       <div className='row'>
@@ -32,7 +32,7 @@ export default function HeaderContentComp({
             <div className='edit-photos edit-company-background'>
               <input
               className='custom-file-input-pic head-bg' onChange={onFile} type='file'
-              name='company/logo_img'
+              name='bg_img'
               />
             +</div></a>}
 
@@ -40,7 +40,7 @@ export default function HeaderContentComp({
           {isEdit && <a href='#'>
             <input
             className='custom-file-input-pic' onChange={onFile} type='file'
-            name='company/main_img'
+            name='main_img'
             />
             <div className='edit-photos'>+</div>
           </a>}

@@ -51,7 +51,11 @@ export default function NewHeader(props) {
                     <li role='separator' className='divider' />
                     <li><a href='#'>PROFILO</a></li>
                     <li role='separator' className='divider' />
-                    <li><a href='#'>Logout</a></li>
+                    <li><a
+                    onClick={() => {
+                      localStorage.removeItem('accessToken');
+                    }} href='/'
+                    >Logout</a></li>
                   </ul>
                 </li>}
               </ul>

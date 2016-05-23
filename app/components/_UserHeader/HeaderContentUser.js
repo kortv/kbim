@@ -13,7 +13,7 @@ export default function HeaderContentUser({ onFile, personal, isEdit }) {
             {isEdit && <a href='#'>
               <input
                 id='custom-file-input-pic' onChange={onFile}
-                type='file' name='user/main_img'
+                type='file' name='main_img'
               />
               <div className='edit-photos'>+</div>
             </a>}

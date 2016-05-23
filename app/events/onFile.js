@@ -11,7 +11,7 @@ export default function onFile(e) {
     formData.append('image', file);
     formData.append('accessToken', localStorage.getItem('accessToken'));
 
-    postChangeUser.call(this, `${paths.host}/api/${target.name}`, formData);
+    postChangeUser.call(this, `${paths.host}/api/userdata/personal/${target.name}`, formData);
   } else {
     console.log(target.files[0]);
   }
