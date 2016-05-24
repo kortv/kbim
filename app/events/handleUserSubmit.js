@@ -14,6 +14,7 @@ export default function handleUserSubmit(e) {
   const slug = input.getAttribute('data-slug');
   if (slug) {
     body.slug = slug;
+    body.value = body.value == 'true' || false;
   }
   console.log(value);
 

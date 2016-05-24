@@ -25,14 +25,14 @@ export default function onChangePass(e) {
   hardEnough = hardEnough && /[a-z]/.test(body.new);
   hardEnough = hardEnough && /\d/.test(body.new);
   hardEnough = hardEnough && body.new.length > 7;
-  if (!hardEnough) alert('password hard is not enough');
+  if (!hardEnough) alert('Password complex not enough');
   if (test /* && hardEnough*/) {
-    console.log(body, `${paths.user}/${pathName}`);
+    console.log(body, `${paths.userdata}/personal/${pathName}`);
     body.old = md5(body.old);
     body.new = md5(body.new);
 
     postChangeUser.call(this,
-      `${paths.user}/${pathName}`,
+      `${paths.userdata}/personal/${pathName}`,
       body
     );
   }
