@@ -17,6 +17,7 @@ import getCategory from './../api/getCategory';
 import postRegistrationLogin from './../api/postRegistrationLogin';
 import getStaticPageList from './../api/getStaticPageList';
 import getFullUserData from './../api/getFullUserData';
+import getFbAuth from './../api/getFbAuth';
 
 import getPageApi from './../events/getPageApi';
 import handleRegistrationLogin from './../events/handleRegistrationLogin';
@@ -28,6 +29,7 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
+    this.getFbAuth = getFbAuth.bind(this);
     this.getFullUserData = getFullUserData.bind(this);
     this.getCategory = getCategory.bind(this);
     this.postRegistrationLogin = postRegistrationLogin.bind(this);
@@ -75,7 +77,9 @@ export default class App extends Component {
         </div>
         <Footer staticPageList={this.state.staticPageList} />
         <ModalLogin handleRegistrationLogin={this.handleRegistrationLogin} />
-        <ModalRegistration handleRegistrationLogin={this.handleRegistrationLogin} />
+        <ModalRegistration
+        getFbAuth={this.getFbAuth} handleRegistrationLogin={this.handleRegistrationLogin}
+        />
         <ModalSuccess
           handlePickCategory={this.handlePickCategory} category={this.state.category}
           mainName={this.state.mainName} mainMsg={this.state.mainMsg}

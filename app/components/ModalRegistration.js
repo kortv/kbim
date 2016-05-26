@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ModalRegistration({ handleRegistrationLogin }) {
+export default function ModalRegistration({ handleRegistrationLogin, getFbAuth }) {
   return (
 
     <div className='modal fade' id='registrationModal' tabIndex={-1} role='dialog'>
@@ -24,7 +24,12 @@ export default function ModalRegistration({ handleRegistrationLogin }) {
           <div className='modal-body'>
             <div className='tab-content'>
               <div role='tabpanel' className='tab-pane active' id='home'>
-                <button className='btn btn-default btn-block lg-facebook'>
+              <div id="uLogin" data-ulogin="display=small;fields=first_name,last_name;providers=linkedin,facebook;hidden=;redirect_uri=http%3A%2F%2Flocalhost%3A8080%2F"></div>
+
+                <button
+                className='btn btn-default btn-block lg-facebook'
+                onClick={() => {window.location.href='https://www.facebook.com/dialog/oauth?client_id=815469045253320&redirect_uri=http://localhost:8080/fblogin&response_type=code'}}
+                >
                   <i className='fa fa-facebook' aria-hidden='true' />connect with facebook</button>
                 <button className='btn btn-default btn-block lg-linkedin'>
                   <i className='fa fa-linkedin-square' aria-hidden='true' />connect with linkedin
