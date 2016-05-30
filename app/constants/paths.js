@@ -8,7 +8,7 @@ const paths = {
   user: 'http://kbim.com.ua/api/user',
   userdata: 'http://kbim.com.ua/api/userdata',
   company: 'http://kbim.com.ua/api/company',
-  fbAuth: 'https://www.facebook.com/dialog/oauth?client_id=815469045253320&redirect_uri=http://localhost:8080/fblogin&response_type=code',
+  fbAuth: 'https://www.facebook.com/dialog/oauth?client_id=815469045253320&redirect_uri=http://kbim.com.ua/fblogin&response_type=code',
 };
 
 export default paths;
